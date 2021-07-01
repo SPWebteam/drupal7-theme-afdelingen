@@ -1,0 +1,130 @@
+/* BUTTONS */
+
+.btn, a.btn {
+    font-family: $font-primary;
+    font-weight: normal;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: $color1;
+    padding: 16px 32px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none; // removes platform specific styling
+}
+.btn:hover, a.btn:hover,
+.btn-invert:hover, a.btn-invert:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    text-decoration: none;
+}
+.btn-invert, a.btn-invert {
+    @extend .btn;  // use default btn style
+    background: #fff;
+    color: $color1;
+    border: 1px solid $color1;
+}
+.btn-invert.tiny,
+.btn.tiny {
+    padding: 0 1rem; // -1px to correct border
+    font-size: 0.8rem; //10px
+    letter-spacing: .2px;
+}
+.btn-invert.small,
+.btn.small {
+    padding: 7px 16px; // -1px to correct border
+    font-size: 1rem; //16px
+    letter-spacing: .2px;
+}
+.btn-invert.large,
+.btn.large {
+    padding: 15px 32px; // -1px to correct border
+    font-size: 2rem; //32px
+    letter-spacing: .2px;
+}
+
+// GHOST BUTTON (needs work!)
+.btn-ghost-color1 {
+    background: none!important;
+    color: $color1!important;
+    border: 3px solid $color1!important;
+    &:hover {
+        background: rgba($color1, .5)!important;
+    }
+}
+.btn-ghost-color2 {
+    background: none!important;
+    color: $color2!important;
+    border: 3px solid $color2!important;
+    &:hover {
+        background: rgba($color2, .5)!important;
+    }
+}
+.btn-ghost-color3 {
+    background: none!important;
+    color: $color3!important;
+    border: 3px solid $color3!important;
+    &:hover {
+        background: rgba($color3, .5)!important;
+    }
+}
+.btn-ghost-color4 {
+    background: none!important;
+    color: $color4!important;
+    border: 3px solid $color4!important;
+    &:hover {
+        background: rgba($color4, .5)!important;
+    }
+}
+.btn-ghost-color5 {
+    background: none!important;
+    color: $color5!important;
+    border: 3px solid $color5!important;
+    &:hover {
+        background: rgba($color5, .5)!important;
+    }
+}
+
+// SOCIAL BUTTONS
+.btn.facebook {
+    background: $facebook;
+}
+.btn.facebook:hover {
+    background: darken($facebook, 5%);
+}
+.btn.twitter {
+    background: $twitter;
+}
+.btn.twitter:hover {
+    background: darken($twitter, 5%);
+}
+.btn.linkedin {
+    background: $linkedin;
+}
+.btn.linkedin:hover {
+    background: darken($linkedin, 5%);
+}
+.btn.email {
+    background: $email;
+}
+.btn.email:hover {
+    background: darken($email, 5%);
+}
+
+.btn.whatsapp {
+    background: $whatsapp;
+}
+.btn.whatsapp:hover {
+    background: darken($whatsapp, 5%);
+}
+
+// ICON BUTTONS
+.btn.icon {
+    font-family: $spruit-icons!important;
+    text-transform: none!important;
+}

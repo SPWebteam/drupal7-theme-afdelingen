@@ -1,0 +1,16 @@
+/* UTILS */
+
+/* HELPER CLASSES */
+.rood {
+	color: $color1;
+}
+
+/* HIDE */
+.hidden, .element-invisible, .menu .title, .front li.comment_forbidden {
+	display: none;
+	visibility: hidden;
+}
+.not-front .node-content .comment_forbidden {
+	display: none;
+}
+// ???

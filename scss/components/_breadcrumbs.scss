@@ -1,0 +1,16 @@
+/* BREADCRUMBS */
+
+.breadcrumb  {
+	overflow: hidden; color: #888;
+	border-top: 1px solid #ddd;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+.breadcrumb a {
+	color: #888;
+	text-decoration: none;
+}
+.breadcrumb a:hover {
+	color: $color1;
+}
+

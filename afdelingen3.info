@@ -1,0 +1,26 @@
+name = SP Afdelingen 3
+description = SP theme built with sass - 2017
+version = 3.1.0
+core = 7.x
+
+stylesheets[all][] = fonts/SPruit-icons.css
+
+stylesheets[all][] = css/main.css
+
+; JavaScript
+scripts[] = js/vendor/modernizr-2.8.3.min.js
+scripts[] = 'js/afdelingen3.js'
+scripts[] = 'js/myfonts.js'
+;scripts[] = 'js/readspeaker_exp_nl.js'
+;scripts[] = 'js/countdown.js'
+
+regions[content] = Middenkolom
+regions[extra] = Onderaan middenkolom
+regions[sidebar_first] = Zijbalk links
+regions[sidebar_second] = Zijbalk rechts
+
+features[] = name
+features[] = logo
+features[] = favicon
+
+settings[afdelingen_type] = sp

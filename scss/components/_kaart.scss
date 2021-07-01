@@ -1,0 +1,61 @@
+/* KAART */
+.leaflet-container {
+    border: 1px solid #ddd;
+}
+
+.kaart .leaflet-popup-content-wrapper {
+    padding: 1px;
+    border-radius: 0px;
+}
+.kaart .leaflet-popup-content {
+    margin: 16px;
+    line-height: 1.5;
+}
+.kaart .leaflet-container a.leaflet-popup-close-button {
+    color: #333333;
+}
+
+.kaart .leaflet-top, .leaflet-bottom {
+    z-index: 500; // fixes overlay in admin interface
+}
+.entity-locaties .leaflet-touch .leaflet-bar a,
+.kaart .leaflet-touch .leaflet-bar a {
+    text-decoration: none; // removes undeline for touch buttons
+}
+
+
+// KAART CUSTOM
+.kaart .leaflet-popup-content h2{
+    margin: 0;
+    font-size: 1rem;
+}
+.kaart .leaflet-popup-content h2 a:hover{
+    color: $color1;
+}
+.kaart .leaflet-popup-content .time{
+    margin-bottom: 8px;
+}
+/* breaks alignment of icon from position
+.view-kaart img.leaflet-marker-icon{
+	margin-left: -14px!important;
+    margin-top: -55px!important;
+    width: 25px!important;
+    height: 41px!important;
+}
+*/
+
+// KAART MOBILE FIX
+@media screen and (max-width: 320px){
+	.kaart .leaflet-popup-content-wrapper {
+    	max-width: 278px;
+	}
+}
+@media screen and (max-width: 620px){
+    .kaart .leaflet-top {
+        top: initial; // t(^^t) explorer!
+        bottom: 0px;
+    }
+    .kaart .leaflet-top .leaflet-control {
+        margin-bottom: 8px;
+    }
+}

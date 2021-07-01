@@ -1,0 +1,67 @@
+/* NIEUWS */
+.node-type-nieuwsitem .page-title,
+.page-nieuws .page-title {
+	display: none;  // Title displayed by template
+}
+
+.node-nieuwsitem.view-mode-full .node-content p:first-of-type {
+	font-family:$font-strong; // make first paragraf bold
+}
+
+/* NIEUWS - TEASER */
+.view-mode-teaser .field-name-field-afbeelding {
+	float: left;
+	margin:4px 14px 0 0;
+	width:200px;
+	height:auto;
+}
+.view-mode-teaser .field-name-field-afbeelding img {
+	width:200px;
+	height:auto;
+}
+.view-mode-teaser .license-info {
+	display:none!important; // remove license info for thumbs in teaser
+}
+/* NIEUWS - FULL */
+.view-mode-full .field-name-field-afbeelding {
+	float: left;
+	margin:0;
+	width:100%;
+	height:auto;
+}
+.view-mode-full .field-name-field-afbeelding img {
+	width:100%;
+	height:auto;
+}
+/* NIEUWS OVERZICHT SIDEBAR */
+.nieuws-block-img img { // make small thumbs
+    max-width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+}
+
+.nieuws-block-img img a {
+    display: inline-block;
+    float: left;
+}
+
+.nieuws-block-img .license-info {
+    display: none; // remove license info for thumbs in sidebar
+}
+
+
+@media screen and (max-width:1000px){
+
+	 //make teaser images full-width for smaller devices
+	.node-teaser .field-name-field-afbeelding {
+		float: left;
+		margin:0;
+		width:100%;
+		height:auto;
+	}
+	.node-teaser .field-name-field-afbeelding img {
+		width:100%;
+		height:auto;
+	}
+}

@@ -1,0 +1,81 @@
+/* HEADER */
+// required for a fixed #header-container
+#container {
+	padding-top: 49px;
+}
+@media screen and (min-width: 841px){
+	#container {
+		padding-top: 100px;
+	}	
+}
+#header-container {
+	border-top: 4px solid $color1;
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	z-index: 1;
+	top: 0px; // #container needs total height of #header-container as extra padding
+	min-height: 50px;
+}
+.logged-in #header-container {
+	top: 84px; // adjust fixed #header-container for drupal users
+}
+#header {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+#site-branding {
+	font-size: 1.5rem;
+	margin: 0;
+}
+.site-name {
+	white-space: nowrap;
+}
+.sp-logo {
+    margin-left: 14px;
+    margin-right: 8px;
+    height: 21px;
+    width: auto;
+    margin-top: 12px;
+}
+@media screen and (max-width:840px){
+    #header-container {
+        border-bottom: 1px solid #ddd;
+    }
+}
+@media screen and (min-width: 841px) {
+	#header {
+		height: 96px;
+	}
+	#site-branding {
+		font-size: 3rem;
+	}
+	.sp-logo {
+	    margin-left: 14px;
+	    margin-right: 100px;
+	    height: 60px;
+	    width: auto;
+	    margin-top: 20px;
+	}
+	// SHRINK
+	#header,
+	#site-branding,
+	#site-branding .sp-logo {
+		transition: .2s ease all;
+	}
+	.js_shrink #header {
+		height:50px!important;
+		border-bottom:1px solid #f1f1f1;
+	}
+
+	.js_shrink #site-branding {
+		font-size: 2rem;
+	}
+	.js_shrink .sp-logo {
+	    margin-left: 14px;
+	    margin-right: 8px;
+	    height: 27px;
+	    width: auto;
+	    margin-top: 12px;
+	}
+}

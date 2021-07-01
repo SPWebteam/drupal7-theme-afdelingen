@@ -1,0 +1,24 @@
+/* READSPEAKER */
+#readspeaker_button1 {
+    text-align: right;
+}
+#readspeaker_button1 img {
+    display: none;
+}
+#readspeaker_button1 a {
+    text-decoration: none;
+    line-height: 1rem;
+}
+.rsbtn_button.rspart a:after {
+    content:"\e903";
+    font-family: $spruit-icons;
+    color: $color1;
+    line-height: 1rem;
+}
+#readspeaker_button1 span {
+    font-family: $font-body;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}

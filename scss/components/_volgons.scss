@@ -1,0 +1,39 @@
+/* VOLG ONS */
+.block-spsocialmedia {
+	padding-bottom: 1rem;
+}
+.block-spsocialmedia a {
+	font-size: 2rem;
+	font-family: $spruit-icons;
+	display: inline-block;
+	border: 1px solid;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 8px 8px 0;
+}
+// smaller icons for sidebar-left
+#sidebar-left .block-spsocialmedia a {
+	border: none;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	margin: 0 3px 3px 0;
+}
+.block-spsocialmedia a.facebook:before {
+	content: 'f';
+}
+.block-spsocialmedia a.twitter:before {
+	content: 't';
+}
+.block-spsocialmedia a.linkedin:before {
+	content: 'l';
+}
+.block-spsocialmedia a.youtube:before {
+	content: 'y';
+}
+.block-spsocialmedia a.instagram:before {
+	content: 'i';
+}

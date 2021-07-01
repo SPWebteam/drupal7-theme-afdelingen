@@ -1,0 +1,40 @@
+/* DOSSIERS */
+#block-views-dossier-overzicht-block ul.dossier {
+	padding: 0;
+	margin: 0 0 13px 0;
+	display: block;
+	overflow: hidden;
+}
+#block-views-dossier-overzicht-block ul.dossier .dossier {
+	border: none;
+	padding: 0 0 15px 0;
+	margin: 0;
+}
+#block-views-dossier-overzicht-block ul.dossier li {
+	display: block;
+	list-style: none;
+	padding: 0 0 0 15px;
+	margin: 0;
+	width: 100%;
+	background: none;
+}
+#block-views-dossier-overzicht-block ul.dossier a:before {
+	font-family: $spruit-icons;
+	content: 'd ';
+}
+#block-views-dossier-overzicht-block ul.dossier a {
+	display: block;
+	margin: 0;
+	padding: 2px 1px;
+}
+#block-views-dossier-overzicht-block ul.dossier a.active {
+	color: $color1;
+}
+#block-views-dossier-overzicht-block ul.dossier .dossier a {
+	font-weight: normal;
+	margin-left: 21px;
+}
+#primary .content ul.dossier a, #primary .content ul.dossier a:visited {
+	text-decoration: none;
+	font-family: $font-middle;
+}

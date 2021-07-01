@@ -1,0 +1,31 @@
+/* PAGER */
+.item-list ul.pager {
+	font-size: 0; //removes white-space between inline-block li
+}
+.item-list .pager {
+	margin: 0 0 30px 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 1.125rem;
+}
+.item-list .pager li {
+	display: inline-block;
+	font-size: 1rem; //overwrite font-size 0
+	margin: 0;
+	padding: 0;
+}
+.item-list .pager a,
+.item-list .pager .pager-current,
+.item-list .pager .pager-ellipsis {
+	display: inline-block;
+	padding: 4px;
+	min-width:32px;
+	line-height:32px;
+	text-decoration:none!important;
+}
+.item-list .pager .pager-first,
+.item-list .pager .pager-previous,
+.item-list .pager .pager-next,
+.item-list .pager .pager-last {
+	font-size:1.125rem;
+}

@@ -1,0 +1,19 @@
+/* IFRAME */
+.content embed, .content iframe {
+	max-width: 100% !important;
+}
+@media screen and (max-width:500px) {
+	.content iframe {
+		max-height: 280px;
+	}
+}
+@media screen and (max-width:400px) {
+	.content iframe {
+		max-height: 225px;
+	}
+}
+@media screen and (max-width:320px) {
+	.content iframe {
+		max-height: 180px;
+	}
+}

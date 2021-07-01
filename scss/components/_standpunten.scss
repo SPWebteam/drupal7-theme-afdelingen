@@ -1,0 +1,34 @@
+/* STANDPUNTEN */
+.view-id-glossary .attachment {
+	overflow: hidden;
+	padding: 5px 0;
+	margin: 0 0 1em 0;
+}
+.view-id-glossary .attachment-before {
+	border: 3px solid #eee;
+	padding: 15px;
+	text-align: center;
+}
+.view-id-glossary .attachment-before .views-summary {
+	display: inline-block;
+	margin: 10px 5px;
+	font-size: .8rem;
+}
+.view-id-glossary .attachment-before .views-summary a {
+	float: left;
+	font-size: 2rem;
+	text-decoration: none;
+	font-family: $font-primary;
+}
+.view-id-glossary .view-content .item-list ul li {
+	margin: 0 0 .5em 0;
+	font-size: 10px;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+	padding: 0 0 .5em 0;
+}
+.view-id-glossary .view-content .item-list ul li p {
+	margin: 0 0 .5em 0;
+	font-size: 11px;
+	color: #555;
+}

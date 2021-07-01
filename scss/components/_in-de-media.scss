@@ -1,0 +1,17 @@
+/* IN DE MEDIA */
+.node-type-in-de-media .page-title {
+	display: none;
+}
+#primary ul.media-overzicht li {
+	list-style: none;
+}
+
+#primary ul.media-overzicht li a:before {
+	font-family: $spruit-icons;
+	content: 'E ';
+}
+#primary ul.media-overzicht li a {
+	font-family: $font-primary;
+	text-decoration: none;
+	text-transform: uppercase;
+}

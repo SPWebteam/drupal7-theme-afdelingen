@@ -1,0 +1,12 @@
+// SHAME
+// Use this file for quickfixes
+
+// Quickfix for amsterdam.sp.nl that uses blocks for frontpage content, and get a no content message when no default frontpage content is shown.
+#first-time {
+  display: none;
+}
+
+// REMOVE DOUBLE TITLE FOR CONTACT FORM MODULE
+#block-webform-client-block-17 {
+	display:none;
+}

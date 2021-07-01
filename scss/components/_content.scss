@@ -1,0 +1,44 @@
+/* CONTENT */
+
+ // gives a default font-size for non paragraph html elements
+.node-content {
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+}
+@media screen and (max-width: 360px){
+	.node-content {
+		font-size: 1rem;
+		line-height: 1.38rem;
+	}
+}
+
+// used for doe-mee and word-lid. Obsolete
+.content .seperator {
+	color: #000;
+	padding: 0;
+	overflow: hidden;
+}
+.content .seperator a, .content .seperator a:visited {
+	color: #ccc;
+	margin-right: 10px;
+	padding: 2px 3px;
+	border: 1px solid #fff;
+	display: inline-block;
+}
+.content .seperator a:hover {
+	color: $color1;
+	border: 1px solid $color1;
+}
+.content .seperator .title {
+	color: #fff;
+	font-size: 0.777em;
+	font-family: $font-middle;
+}
+.seperator-direct {
+	background: #ddd;
+	padding: 4px 3px 2px 3px;
+	display: inline-block;
+}
+.content .field-title {
+	margin: 5px 0;
+}

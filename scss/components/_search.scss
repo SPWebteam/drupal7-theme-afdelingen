@@ -1,0 +1,78 @@
+/* SEARCH */
+#block-search-form h2.title {
+    display: none;
+}
+#sidebar-left #block-search-form {
+    border-bottom: none;
+}
+// end shame
+
+/* SEARCH RESULTS */
+ol.search-results {
+    padding: 0;
+    margin: 0;
+}
+.search-result {
+    border-bottom: 1px solid #aaa;
+    margin: 1.4em 0;
+}
+.search-result:last-of-type {
+    border: none;
+}
+.search-result .search-snippet-info { //search result wrapper
+    padding: 0;
+}
+.search-snippet { //search result body
+    display: block;
+}
+.search-info {
+    color: $color1;
+    font-size: .9em;
+    font-weight: normal;
+}
+.search-info a.username {
+    display: none;
+}
+
+/* ADVANCED SEARCH OPTIONS */
+#edit-advanced .form-type-checkboxes {
+    padding: 0 12px;
+}
+#edit-advanced .form-type-textfield label {
+    color: #555;
+    padding: 4px;
+}
+
+/* SIDEBAR-LEFT SEARCH */
+#sidebar-left #search-block-form {
+    position: relative;
+    min-height: 50px;
+}
+#sidebar-left #block-search-form .form-submit {
+    background: transparent url('../images/zoeken.gif') no-repeat;
+    border: none;
+    position: absolute;
+    top: 13px;
+    left: 151px;
+    font-size: 0; //hides value of button
+    outline: none; //removes default focus styling
+}
+#sidebar-left #bloch-search-form .form-submit:focus {
+    //outline: none; //removes default focus styling
+}
+#sidebar-left #block-search-form .form-submit:hover {
+    background: transparent url('../images/zoeken_donker.gif') no-repeat;
+}
+#sidebar-left #block-search-form .form-text {
+    position: absolute;
+    width: 175px;
+}
+#sidebar-left #block-search-form h2 {
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+}
+
+/* SIDEBAR-RIGHT SEARCH */
+#sidebar-right .search .form-text { width: 120px; }
+#sidebar-right .search .form-submit { width: 50px; margin: 2px; }
+#sidebar-right .search form { width: 200px; margin: 0 auto; }

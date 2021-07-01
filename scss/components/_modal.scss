@@ -1,0 +1,60 @@
+// MODAL
+
+body.modal-open {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    width: 100%;
+    z-index: 9000;
+}
+
+.modal .wrapper {
+    background: #fff;
+    max-width: 960px;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 32px);
+    max-height: calc(100vh - 32px);
+    border-top: 8px solid $color1;
+    box-shadow: 0 0 120px #101010;
+}
+@media screen and (min-width: 1080px){
+    .modal .wrapper {
+        padding: 2rem;
+    }
+}
+.modal .wrapper img {
+    height: auto;
+    width: auto;
+    max-height: 400px; // sets a max-height for (to) long portrait images
+    max-width: 100%;
+}
+.modal .wrapper a.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: SPruit-icons;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 360px){
+    .modal .wrapper h2 { //fixes long titles
+        font-size: 1.2rem;
+    }    
+}

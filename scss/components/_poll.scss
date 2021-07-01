@@ -1,0 +1,28 @@
+/* POLL */
+
+.node-poll .read-more {
+	display: none; // removes read-more link. Needs a fix!
+}
+.poll .total {
+	display: none; // removes total votes
+}
+.poll .bar { //grey bar
+	height: 15px;
+	overflow: hidden;
+	background: #eee;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.poll .bar .foreground { //red bar
+	background: $color1;
+}
+.poll .percent {
+	margin-bottom: 15px;
+}
+// PRIMARY POLL
+#primary .poll .vote-form .choices {
+	margin: 0; // default: 0 auto
+}
+#primary .poll .vote-form {
+	text-align: left; // default: center
+}

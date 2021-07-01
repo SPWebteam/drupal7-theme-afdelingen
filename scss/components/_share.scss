@@ -1,0 +1,60 @@
+/* SHARE */
+.share {
+    text-align: center;
+}
+.share_text {
+	display: inline-block;
+	font-size: 1rem;
+	font-family: $font-strong;
+}
+.share_button-wrapper {
+    display: inline-block;
+    position: relative;
+    bottom: -4px; //quickfix
+}
+a.share_button {
+	font-size: 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding:.5rem;
+	color: #888;
+	span {
+		display:none;
+	}
+	&:hover {
+		color: #333;
+	}
+}
+a.share_button--facebook {
+	&:hover {
+		color: $facebook;
+	}
+	&:before {
+		content: 'f';
+		font-family: $spruit-icons;
+	}
+}
+a.share_button--twitter {
+	&:hover {
+		color: $twitter;
+	}
+	&:before {
+		content: 't';
+		font-family: $spruit-icons;
+	}
+}
+a.share_button--whatsapp {
+	&:hover {
+		color: $whatsapp;
+	}
+	&:before {
+		content: 'W';
+		font-family: $spruit-icons;
+	}
+}
+// hide whatsapp for no-touch devices
+// using: js/vendor/modernizr-2.8.3.min.js
+.no-touch a.share_button--whatsapp {
+	display: none;
+}

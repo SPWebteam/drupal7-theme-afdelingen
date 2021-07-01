@@ -1,0 +1,34 @@
+/* SECONDARY */
+#secondary {
+	background: $color1;
+	padding: 1rem 0;
+	color: #FFF;
+	a {
+		border: none;
+	}
+}
+.secondary-social,
+.secondary-subscribe {
+	padding:0!important;
+	text-align: center;
+}
+.secondary-social a {
+	font-family: $spruit-icons;
+	font-size: 2rem;
+	line-height: 3.25rem;
+	padding: 0 10px;
+}
+.secondary-subscribe a {
+	padding: 1rem;
+}
+@media screen and (min-width: 576px){
+	#secondary {
+		padding: 2rem 0;
+	}
+}
+@media screen and (min-width: 576px){
+	.secondary-social,
+	.secondary-subscribe {
+		text-align: left;
+	}
+}

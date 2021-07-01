@@ -1,0 +1,71 @@
+/* FORM */
+
+ // Grippie https://www.drupal.org/node/1295336
+.grippie {
+    display: none; // Removes resizing-bar for textarea
+}
+
+form {
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+
+label {
+    font-family: $font-strong;
+    font-weight: normal;
+}
+select {
+    background: #fbfbfb;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+input[type="text"],input[type="email"],input[type="password"],textarea {
+    font-family: $font-strong;
+    color: #333;
+    padding: 10px 15px;
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    max-width: 100%; // to prevent overflow
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,textarea:focus {
+    outline: none; // removes default focus from browser
+    box-shadow: 0 0 5px 0 #c8c8c8; // adds shadoweffect for focus
+    border: 1px solid #888;
+}
+input[type="button"], input[type="submit"] {
+    font-family: $font-middle;
+    text-transform: uppercase;
+    background: $color1;
+    padding: 10px 15px;
+    color: #fff;
+    min-width: 100px;
+    cursor: pointer;
+    border: 1px solid $color1;
+    text-decoration: none;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+.description {
+    font-size: 1em;
+    color: #666;
+    padding: 15px 0;
+    line-height: 1.32;
+}
+// Additional options
+#edit-previous,
+#edit-cancel { //inverted button
+    font-family: $font-middle;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 10px 15px;
+    color: $color1;
+    min-width: 100px;
+    cursor: pointer;
+    border: 1px solid $color1;
+    text-decoration: none;
+    margin-left: 15px;
+}

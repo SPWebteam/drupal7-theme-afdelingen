@@ -1,0 +1,151 @@
+/* BASIC UTILS */
+
+// TEXT ALIGN
+.txt-center, //ckeditor
+.text-center {
+    text-align: center!important;
+}
+.txt-left, //ckeditor
+.text-left {
+    text-align: left!important;
+}
+.txt-right, //ckeditor
+.text-right {
+    text-align: right!important;
+}
+.text-justify {
+    text-align: justify!important;
+}
+.text-muted {
+    color: #999!important;
+}
+// VERTICAL ALIGN
+.align-baseline {
+    vertical-align: baseline; // Align the baseline of an element with the baseline of its parent.
+}
+.align-top {
+    vertical-align: top; // Align the top of an element and its descendants with the top of the entire line.
+}
+.align-middle {
+    vertical-align: middle; // Align the middle of an element with the baseline plus half the x-height of the parent.
+}
+.align-bottom {
+    vertical-align: bottom; // Align the bottom of an element and its descendants with the bottom of the entire line.
+}
+.align-text-top {
+    vertical-align: text-top; // Align the top of an element with the top of the parent element's font.
+}
+.align-text-bottom {
+    vertical-align: text-bottom; // Align the bottom of an element with the bottom of the parent element's font.
+}
+// VISIBILITY
+.overflow-hidden {
+    overflow: hidden!important;
+}
+/* =========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    visibility: hidden;
+}
+/*
+ * Extends the .invisible class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.invisible.focusable:active, .invisible.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {}
+// FLOATS AND CLEARFIX
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.float-none {
+    float: none;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+// SHADOW
+.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+.shadow-md {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+.shadow-lg {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+.shadow-inner {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+.shadow-none {
+    box-shadow: none;
+}
+.viewport-height {
+    height: 100vh;
+}
+.viewport-full-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: auto;
+    display: block;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-color: #aaa;
+}
+.content-fill {
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    max-height: 960px;
+}
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+}

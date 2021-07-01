@@ -1,0 +1,76 @@
+/* LAYOUT */
+#container {
+	height: auto;
+	margin: 0 auto;
+}
+#content-container {
+	max-width:1160px;
+	margin:0 auto;
+	//top: 100px;
+	//position: relative;
+}
+#primary {
+	margin: 0;
+	padding: 1rem;
+	max-width: 620px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+#sidebar-left {
+    width: 207px;
+    float: left;
+    padding: 1rem;
+    position:relative;
+}
+#sidebar-right {
+    width: 332px;
+    float: left;
+    padding: 1rem;
+    position:relative;
+}
+
+
+/* Page structural alternatives */
+.no-sidebars #primary {
+	float: none;
+	margin: 0 0 0 157px;
+	width: 552px;
+}
+.one-sidebar.sidebar-second #primary {
+	float: left;
+	width: 368px;
+	margin: 0 22px 0 157px;
+}
+
+
+/* make primary flexible to keep two sidebars */
+@media screen and (min-width: 841px) and (max-width:1160px){
+	#primary {
+		max-width: calc(100vw - 539px);
+	}
+}
+/* primary and sidebar-left only */
+@media screen and (min-width: 540px) and (max-width:840px){
+	#primary {
+		max-width: calc(100vw - 275px);
+	}
+	#sidebar-right {
+		width: 275px;
+	}
+}
+/* put sidebar-right below primary for mobile*/
+@media screen and (max-width: 539px){
+	#sidebar-right {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 840px){
+	#content-container {
+		top: 49px;
+	}
+}
+
+

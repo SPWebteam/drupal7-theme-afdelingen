@@ -1,0 +1,209 @@
+/* BASE */
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
+/* REMOVE DEFAULT SELECTION COLOR IN BROWSER */
+//::-moz-selection{ background: #ff3; text-shadow: none;}
+//::selection { background:#ff3; text-shadow: none;}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 16px 0;
+    line-height: 1;
+    color: $color2;
+    font-family: $font-primary;
+}
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+h6 {
+    background: $color1;
+    color: #fff;
+    padding: 8px;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    font-family: $font-middle;
+}
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h2.page-title {font-size: 2.5rem;}
+.node:first-of-type h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.25rem;}
+h5 {font-size: 1rem;}
+h6 {font-size: 1rem;}
+
+@media screen and (max-width:840px){
+    h1 {font-size: 1.75rem;}
+    h2 {font-size: 1.5rem;}
+    .page-title { font-size: 1.5rem;}
+    .node:first-of-type h2 { font-size: 1.5rem;}
+    h3 {font-size: 1.25rem;}
+    h4 {font-size: 1rem;}
+    h5 {font-size: 0.75rem;}
+    h6 {font-size: 1rem;}
+}
+
+
+// remove underline
+h1 a,
+h1 a:link,
+h1 a:visited,
+h2 a,
+h2 a:link,
+h2 a:visited,
+h3 a,
+h3 a:link,
+h3 a:visited  { color: $color2; text-decoration: none; }
+h4 a,
+h4 a:link,
+h4 a:visited  { color: $color1; text-decoration: none; } //red color!
+
+html {
+    font-family: $font-body;
+}
+body {
+    background: #fff;
+    color: $color2;
+}
+p {
+    font-size: 1.125rem; //18px
+    color: $color2;
+    line-height: 1.625rem; //26px
+    margin: 0 0 16px 0;
+}
+@media screen and (max-width: 360px){
+    p { //fixes long words
+        font-size: 1rem;
+    }
+}
+a, a:visited {
+    color: $color2;
+    text-decoration: none;
+}
+
+strong {
+    font-family: $font-strong;
+    font-weight: 400; // weight is increased by $font-strong
+}
+abbr { border-bottom: 1px dotted #aaa;}
+li p { display: inline; } // ???
+em {font-style: italic;}
+
+/* CONTENT MARKUP */
+blockquote {
+    padding: .5em 1em;
+    margin: .72em;
+    border-bottom: 1px;
+    border-left: 4px solid #ddd;
+}
+blockquote p {
+    font-weight: normal!important;
+    font-size: .95em;
+    padding: 0 .4em .72em 0;
+}
+pre,
+code {
+    color: #555;
+}
+abbr {} //disabled in wysiwyg editor
+small {}
+cite {} //has no styling
+cite:before {content: open-quote; padding: 0 2px;}
+cite:after {content: close-quote; padding: 0 2px;}
+sup {} //disabled in wysiwyg editor
+sub {} //disabled in wysiwyg editor
+del {} //disabled in wysiwyg editor
+ins {} //disabled in wysiwyg editor
+hr {
+    border: none; 
+    background: transparent; 
+    display: block; 
+    height: 1px; 
+    border-top: 1px solid #ddd;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+ul {
+    overflow: hidden; //fixes flow
+}
+li {
+    margin-bottom: 16px;
+}
+
+// DESCRIPTION LIST
+dl { font-size: 1rem; line-height: 1.35em; } // description list
+dt { font-weight: bold; } // description list, term
+dd { margin: 16px; border-bottom: 1px solid #ddd; padding: 0 0 16px 16px;} // description list, term description
+
+// TABLES
+table {
+    max-width: 100%;
+    margin: 16px 0;
+    clear: both;
+}
+thead {
+    background: #eee;
+}
+tbody {
+    border: none;
+}
+tfoot {}
+td {
+    vertical-align: middle;
+}
+caption {
+    background: #ddd;
+    padding: 8px;
+}
+
+th {
+    padding: 8px;
+    border: none;
+    font-weight: 700;
+}
+td,
+tr {
+    padding: 8px;
+    border: 1px solid #aaa;
+    vertical-align: middle;
+}
+table.full-width {
+    width: 100%;
+}
+table.no-borders,
+table.no-borders tr, 
+table.no-borders td {
+    border: none;
+}
+
+
+/* Content Links */
+a, 
+a:link, 
+a:visited {
+    color: $color2;
+    text-decoration:underline;
+    overflow-wrap:break-word; //prevents long urls breaking layout
+}
+a:hover {
+    text-decoration:underline;
+    color: $color1;
+}
+
+/* WRONG FIX FOR CONTENT
+p a, 
+p a:link, 
+p a:visited {
+    color: $color2;
+    font-family: $font-strong;
+}
+p a:hover {
+    text-decoration:underline;
+    color: $color1;
+}
+*/

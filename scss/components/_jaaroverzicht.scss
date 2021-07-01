@@ -1,0 +1,40 @@
+/* JAAROVERZICHT */
+.nieuws-jaar-overzicht {
+	border-top: 1px solid #ddd;
+	margin: 25px 0 15px 0;
+}
+.nieuws-jaar-overzicht h3 {
+	background: #fff;
+	position: absolute;
+	margin: -10px 0 0 0;
+	padding: 0 8px 0 0;
+	font-size: 1.2rem;
+}
+.nieuws-jaar-overzicht ul {
+	padding: 25px 0 0 0;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.nieuws-jaar-overzicht ul li {
+	display: inline-block;
+	font-weight: bold;
+	margin: 5px;
+	padding: 0;
+}
+.nieuws-jaar-overzicht li a {
+	padding: 5px;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 3px solid #ddd;
+}
+.nieuws-jaar-overzicht li a:hover {
+	border-bottom: 3px solid $color1;
+}
+.nieuws-jaar-overzicht li a.active {
+	border-bottom: 3px solid #000;
+}
+
+
+

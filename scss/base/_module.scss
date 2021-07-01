@@ -1,0 +1,7 @@
+/* BASE */
+@import 'normalize'; //1st
+@import 'variables';  //2nd
+@import 'mixins';    //3rd
+
+@import 'base'; //styling for pure html elements
+

@@ -1,0 +1,74 @@
+/* COMMENTS */
+
+// EDIT LINKS
+#comments ul.links.inline {
+	display: block;
+	padding-left: 15px;
+}
+#comments ul.inline li {
+	padding: 0;
+
+}
+#comments .comment .links li {
+	font-size: .9rem;
+}
+#comments .comment .links li a:hover {
+	color: $color1;
+}
+// FORM DESCRIPTION / TIPS
+#comments .tips {
+	background: #fafafa;
+	color: $color2;
+	border: 1px dashed #ddd;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#comments .tips li {
+	padding: 5px 0;
+}
+/*
+.front .comment_add {
+	display: none;
+}
+*/
+
+// COMMENTS
+#comments .comment p {
+	font-size: .9rem;
+}
+#comments .comment .content {
+	padding: 0 15px;
+}
+#comments .comment {
+	margin-bottom: 15px;
+	border: 1px dotted #ddd;
+	background: #fbfbfb;
+}
+#comments .comment .submitted {
+	font-size: .9rem;
+	border-bottom: 1px dotted #ddd;
+	padding: 10px 15px;
+}
+#comments .comment .username {
+	font-family: $font-strong;
+}
+#comments .comment .new {
+	display: none;
+}
+#comments .indented {
+	margin: 5px 0 0 12px;
+}
+#edit-comment-body-und-0-format-help {
+	display: none;
+}
+// ???
+
+.content .comment_forbidden a:visited {
+	color: #555;
+	border: none;
+}
+.content .comment_forbidden a:hover {
+	color: $color1;
+	background: none;
+	border: none;
+}

@@ -1,0 +1,23 @@
+/* DEFAULT DRUPAL ELEMENTS */
+.content .node {
+	padding: 0 0 16px 0;
+}
+.content .node-info {
+	font-size: .75rem;
+	color: #aaa;
+	padding: 0 0 4px 0;
+}
+.content .node-content img {
+	max-width: 100%;
+	height: auto;
+}
+.content .node .date {
+	float: left;
+	margin-right: 4px;
+	font-size: .75rem;
+	//line-height: 1.33;
+}
+.node-teaser {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 16px;
+}

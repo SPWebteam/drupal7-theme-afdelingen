@@ -1,0 +1,104 @@
+/* EDITOR */
+
+// EXTRA STYLES USED BY WYSIWYG EDITOR
+.content .rood-back {
+    background: $color1;
+    color: #fff;
+    padding: .2em;
+}
+.content .rood-back a:hover {
+    color: #fff !important;
+}
+.content .rood-back .rood {
+    color: $color2;
+}
+.content .align-left  {
+    float: left;
+    margin-right: 15px;
+}
+.content .align-right {
+    float: right;
+    margin-left: 15px;
+}
+.content img.portrait {
+    width: 100px; height: auto; float: left; margin-right: .72em;
+}
+.content .kader {
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+.content .kader-grijs {
+    background: #fafafa;
+    border: 1px solid #ccc;
+}
+.content .kader-rood {
+    border: 1px solid $color1;
+}
+.content .kader p:first-child {
+    font-weight: normal;
+} 
+
+.content .kader h6 {
+    margin: -1.32em;
+    margin-bottom: 1em;
+    padding-left: 6px;
+}
+.content .kader-grijs h6 {
+    background: #ccc;
+    color: $color2;
+}
+
+.content .caption {
+    font-size: 11px;
+    margin-top: -.4em;
+    margin-bottom: .72em;
+    color: #888;
+}
+
+/* LEGACY */
+// still used (in old content) to align images through editor
+.centreer {
+  text-align: center;
+  margin: 0 auto;
+}
+.drijflinks {
+  float: left;
+  margin: 0 8px 8px 0;
+  clear: left;
+}
+.drijfrechts {
+  float: right;
+  margin: 0 0 8px 8px;
+}
+// OBSOLETE
+/*
+html { background: #f5f5f5; }
+body {
+  background: #fff;
+  box-shadow: 1px 1px 2em #ddd;
+  min-height: 60px;
+  border-bottom: 1px dashed #ddd;
+  font: 12px Verdana;
+  color: #333;
+  line-height: 1.32;
+  padding: 16px;
+  margin: 0 16px 16px 16px;
+  width: 620px;
+}
+.content p:first-child { font-weight: bold; }
+.content p  { margin: 0 0 .5em 0; }
+.content ol { margin: 0; list-style: decimal;}
+.content ul { margin: 0; padding: 0;}
+.content ul li { background: url('../images/pijltje.gif') no-repeat .3em .5em;}
+.content a, a:link, a:visited {text-decoration: underline; color: #333;}
+.content tr {background: none; border: none !important;}
+.content tr td { border: 1px solid #aaa; }
+.content .no-borders tr td { border: 1px dashed #aaa !important; }
+.content table {
+  border: none;
+  border-collapse: collapse;
+  background: #fff;
+}
+*/

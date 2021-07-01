@@ -1,0 +1,83 @@
+/* FRACTIE EN BESTUUR */
+.page-onze-mensen .persoon {
+	border-top: none;
+}
+.onze-mensen p.email, .onze-mensen p.telefoon, .onze-mensen p.functie, .onze-mensen p.functie-omschrijving {
+	margin: 0
+}
+.onze-mensen .persoon .email a {
+	color: $color1;
+	text-decoration: none;
+}
+.onze-mensen .persoon {
+	padding: 16px 0;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+}
+.onze-mensen .functie {
+	font-family: $font-middle;
+}
+.onze-mensen .naam {
+	color: $color1;
+}
+.onze-mensen .profielfoto {
+	float: right;
+	margin-left: 16px;
+}
+.onze-mensen .functie-omschrijving {
+	color: #666;
+	padding: 3px 0;
+	font-size: 1rem;
+}
+.onze-mensen div.social-media-links {
+	float: right;
+	clear: right;
+}
+.onze-mensen .social-media-links a {
+	margin-left: 8px;
+	margin-top: 4px;
+	display: inline-block;
+	text-decoration: none !important;
+	color: $color1 !important;
+}
+.onze-mensen .social-media-links a:hover {
+	color: #333 !important;
+}
+.onze-mensen .telefoon:before {
+	content: "\e600";
+	font-family: $spruit-icons;
+}
+.onze-mensen-email, .onze-mensen-linkedin, .onze-mensen-facebook, .onze-mensen-blog, .onze-mensen-googleplus, .onze-mensen-telefoon, .onze-mensen-twitter {
+	font-family: $spruit-icons;
+	font-size: 1.5rem;
+	border: 1px solid;
+}
+// SIDEBAR
+.sidebar .onze-mensen .persoon {
+	padding: 0;
+	margin: 8px;
+	line-height: 1;
+	border: none;
+}
+.sidebar .onze-mensen .persoon:hover {
+	box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.13);
+}
+.sidebar .onze-mensen .profielfoto {
+	float: left;
+	margin: 0 8px 0 0;
+	padding: 0;
+}
+.sidebar .onze-mensen .naam {
+	font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	margin: 16px 0 0 0;
+}
+.sidebar .onze-mensen .naam a {
+	color: #333;
+}
+#sidebar-right .onze-mensen .persoon {
+	margin: 0;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}

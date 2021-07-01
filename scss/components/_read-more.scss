@@ -1,0 +1,21 @@
+/* READ MORE */
+// Used in nieuws,blog,poll
+.read-more {
+	display: block;
+	overflow: hidden;
+	text-align: right;
+	clear: both;
+	@include clearfix;
+}
+.read-more a,
+.read-more a:visited {
+	color: $color1;
+	display: block;
+	font-weight: 400;
+	font-family: $font-middle;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.read-more a:hover {
+	text-decoration: underline;
+}

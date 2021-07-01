@@ -1,0 +1,80 @@
+/* FOOTER */
+.footer {
+	background: #FFF;
+	color: #333;
+	padding-top: 2rem;
+}
+.footer_section {
+	margin-bottom: 1rem;
+}
+
+// FOOTER MENU
+.footer_title {
+	color: #333;
+	font-size: 1.2rem;
+	font-family: $font-primary;
+}
+.footer .menu,
+.footer_menu {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.footer .menu li,
+.footer_menu-item {
+	margin: 0;
+	padding: 0;
+}
+.footer_menu-item--international {
+	display: inline-block;
+	margin-right: 1rem;
+}
+.footer .menu li a,
+.footer_menu-link {
+	display: inline-block;
+	font-family: $font-strong;
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: #333;
+	}
+	&:hover {
+		color: $color1;
+	}
+}
+.footer .menu .menu {
+	margin-left: 16px;
+}
+
+
+// FOOTER BOTTOM
+.footer-bottom {
+	text-align: center;
+	font-weight: normal;
+	font-size: .75rem;
+	color: darken(#FFF, 20%);
+	font-size: .8rem;
+	a {
+		text-decoration: none;
+		color: darken(#FFF, 20%);
+		&:hover {
+			color: $color1;
+		}
+	}
+}
+.footer-bottom .license-icons {
+	font-size: .8rem;
+}
+// SP LOGO
+.footer-bottom:after {
+    font-family: "SPruit-icons";
+    content: 'T';
+    line-height: 1;
+    display: block;
+    height: 42px;
+    color: $color1;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}

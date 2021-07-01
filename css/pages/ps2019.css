@@ -1,0 +1,526 @@
+/* VERKIEZINGEN PS */
+.node-type-verkiezing * {
+  box-sizing: border-box; }
+
+.node-type-verkiezing .nav-tabs li {
+  margin-bottom: 0; }
+
+/*
+// default fontsize for non-paragraph
+.node-type-verkiezing #nieuws-berichten {
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+}
+*/
+@media screen and (min-width: 992px) {
+  #introductie,
+  #lijsttrekker,
+  #programma-chapters {
+    padding: 2rem; } }
+/* TYPOGRAPHY */
+/* COLORS */
+/* BOX-SHADOW */
+.node-type-verkiezing {
+  background: #F1F1F1;
+  border-top: 5px solid #EC1B23; }
+
+.node-type-verkiezing img {
+  max-width: 100%;
+  height: auto; }
+
+.node-type-verkiezing img:not([src]) {
+  visibility: hidden; }
+
+.node-type-verkiezing li p {
+  display: block; }
+
+.node-type-verkiezing .panel {
+  padding: 1rem;
+  background: #FFF;
+  margin-bottom: 1rem; }
+
+.logo-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem; }
+
+.node-type-verkiezing #header-verkiezing {
+  background: #FFF;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center; }
+  .node-type-verkiezing #header-verkiezing h1 {
+    color: #EC1B23; }
+
+@media screen and (min-width: 992px) {
+  .node-type-verkiezing #header-verkiezing {
+    padding: 3rem 1rem 2rem 1rem; } }
+.node-type-verkiezing #header-verkiezing .verkiezing-name {
+  display: block; }
+
+@media screen and (max-width: 570px) {
+  .node-type-verkiezing #header-verkiezing .verkiezing-name {
+    font-size: 1rem !important; }
+
+  .node-type-verkiezing #header-verkiezing h1 {
+    font-size: 1.75rem !important; } }
+@media screen and (min-width: 571px) {
+  .node-type-verkiezing #header-verkiezing .verkiezing-name {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important; }
+
+  .node-type-verkiezing #header-verkiezing h1 {
+    font-size: 3.5rem !important; } }
+.node-type-verkiezing .nav-tabs {
+  border-top: 1px solid #f1f1f1;
+  background: #FFF;
+  padding: 0;
+  text-align: center;
+  font-size: 0; }
+  .node-type-verkiezing .nav-tabs li {
+    display: inline-block; }
+  .node-type-verkiezing .nav-tabs li a {
+    display: inline-block;
+    background-color: #FFF;
+    font-size: .8rem;
+    padding: 8px;
+    font-family: HelveticaNeueLTStd-BdCn, sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .node-type-verkiezing .nav-tabs li a:hover {
+      background: #EC1B23;
+      color: white; }
+
+@media screen and (min-width: 571px) {
+  .node-type-verkiezing .nav-tabs li a {
+    padding: .5rem 1rem;
+    font-size: 1rem; } }
+.node-type-verkiezing .nav-tabs li a:hover {
+  color: #FFF;
+  background: #000; }
+
+.node-type-verkiezing .nav-tabs li.active a {
+  background: #EC1B23;
+  color: #FFF; }
+
+.node-type-verkiezing .volgons .col-md-12 {
+  padding: 0; }
+
+@media screen and (max-width: 1374px) {
+  .node-type-verkiezing #volgons {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 0;
+    text-align: right;
+    z-index: 1; }
+
+  .node-type-verkiezing #volgons li {
+    display: inline-block;
+    list-style: none;
+    margin: 0; }
+
+  .node-type-verkiezing #volgons li p {
+    color: #EC1B23; }
+
+  .node-type-verkiezing #volgons li a {
+    font-family: SPruit-icons;
+    font-size: 1rem;
+    color: #333;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #FFF;
+    border-right: 1px solid #E2E2E2;
+    transition: all .2s ease; }
+    .node-type-verkiezing #volgons li a:hover {
+      color: #FFF;
+      background-color: #000; }
+    .node-type-verkiezing #volgons li a:last-child {
+      border-right: none; }
+
+  .node-type-verkiezing #volgons li.label p {
+    font-family: HelveticaNeueLTStd-BdCn, sans-serif;
+    color: #333;
+    margin: 0; } }
+@media screen and (min-width: 1375px) {
+  .node-type-verkiezing #volgons li.label {
+    display: none; }
+
+  .node-type-verkiezing #volgons {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 2rem;
+    margin-left: -4rem;
+    overflow: visible; }
+
+  .node-type-verkiezing #volgons li {
+    list-style: none;
+    margin: 0; }
+
+  .node-type-verkiezing #volgons li a {
+    font-family: SPruit-icons;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 43px;
+    text-align: center;
+    background: #FFF;
+    transition: all .2s ease; }
+    .node-type-verkiezing #volgons li a:hover {
+      color: #FFF;
+      background-color: #000; }
+
+  .node-type-verkiezing #volgons li a.instagram {
+    font-size: 18px; }
+
+  .node-type-verkiezing #volgons li a.youtube {
+    font-size: 35px;
+    padding: 0; } }
+.node-type-verkiezing #primary-verkiezing {
+  min-height: 73vh;
+  padding-top: 1rem;
+  padding-bottom: 4rem; }
+
+.node-type-verkiezing #primary-verkiezing .interface {
+  width: 100%;
+  overflow: hidden; }
+
+.node-type-verkiezing #introductie,
+.node-type-verkiezing #etab {
+  background: #FFF;
+  max-width: 1140px;
+  margin: 0 auto 2rem auto; }
+
+.node-type-verkiezing #lijsttrekker {
+  background: #FFF;
+  margin: 0 auto 2rem auto; }
+
+.node-type-verkiezing #lijsttrekker .foto {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem; }
+
+.node-type-verkiezing #lijsttrekker blockquote {
+  font-size: 1.4em;
+  color: #222; }
+
+.node-type-verkiezing .achtergrond-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  z-index: 11; }
+
+.node-type-verkiezing .achtergrond-item .content-wrapper {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  transform: translate(-50%, 0%);
+  background-color: #FFF;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 11; }
+
+.node-type-verkiezing .achtergrond-item a.close-button {
+  float: right; }
+
+.node-type-verkiezing #primary-verkiezing .nav-chapters {
+  margin: 0;
+  padding: 0; }
+
+.node-type-verkiezing #primary-verkiezing .nav-chapters li {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 0 .5rem; }
+
+.node-type-verkiezing #primary-verkiezing .nav-chapters li a {
+  display: block;
+  padding: .5rem;
+  border-bottom: 1px solid #CCC;
+  text-decoration: none;
+  font-family: HelveticaNeueLTStd-BdCn, sans-serif; }
+
+.node-type-verkiezing #primary-verkiezing .nav-chapters li a:hover {
+  background: #333;
+  color: #FFF;
+  border-color: #222; }
+
+.node-type-verkiezing #primary-verkiezing .nav-chapters li:last-child a {
+  border: none; }
+
+.node-type-verkiezing .nav-chapters .active a {
+  color: #EC1B23; }
+
+.node-type-verkiezing .chapter .title {
+  color: #EC1B23; }
+
+.node-type-verkiezing .chapter .content {
+  font-size: 1.125rem;
+  line-height: 1.625rem; }
+
+.node-type-verkiezing .chapter .content p {
+  font-size: 1.125rem;
+  line-height: 1.625rem; }
+
+.node-type-verkiezing li.nieuws-titel:before {
+  content: 'H';
+  position: absolute;
+  margin-left: -1rem;
+  font-family: SPruit-icons;
+  color: #EC1B23; }
+
+.node-type-verkiezing #nieuws-titels ul {
+  border-top: 1px solid #CCC;
+  padding: 1rem 0 0 1rem;
+  margin: 0; }
+
+.node-type-verkiezing #nieuws-titels li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.node-type-verkiezing #nieuws-titels .nieuws-titel a {
+  display: block;
+  text-decoration: none;
+  font-family: HelveticaNeueLTStd-BdCn, sans-serif; }
+
+.node-type-verkiezing #nieuws-berichten ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 1rem;
+  display: inline-block;
+  margin: 0;
+  clear: left; }
+
+.node-type-verkiezing #nieuws .views-row-last a {
+  border: none; }
+
+.node-type-verkiezing .modal {
+  display: none; }
+  .node-type-verkiezing .modal .modal-close {
+    position: fixed;
+    top: auto; }
+  .node-type-verkiezing .modal .wrapper {
+    max-width: 665px; }
+
+.node-type-verkiezing .agenda-item {
+  padding: 16px 0;
+  border-top: 1px solid #CCC; }
+
+.node-type-verkiezing .agenda-item .title {
+  font-size: 1.4em; }
+
+.node-type-verkiezing .views-label-field-verk-agenda-waar,
+.node-type-verkiezing .date-display-single {
+  font-family: HelveticaNeueLTStd-Md, sans-serif;
+  text-transform: capitalize; }
+
+.node-type-verkiezing #programma-index h2 {
+  font-size: 1.5rem; }
+
+.node-type-verkiezing #programma-chapters {
+  padding-bottom: 4rem; }
+  .node-type-verkiezing #programma-chapters h3 {
+    padding-top: 2rem; }
+
+.view-verkiezingsstandpunten .view-content {
+  margin: 0;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: 1rem; }
+
+.standpunt {
+  display: inline-block;
+  background: #FFF;
+  padding: 32px;
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .view-verkiezingsstandpunten .view-content {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+@media only screen and (min-width: 992px) {
+  .view-verkiezingsstandpunten .view-content {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; } }
+.node-type-verkiezing .top10 {
+  overflow: hidden; }
+
+.node-type-verkiezing .lijst {
+  margin-top: 1rem;
+  background: #FFF;
+  padding: 1rem; }
+
+.node-type-verkiezing .kandidaat-link {
+  position: relative;
+  display: block;
+  text-decoration: none; }
+
+.node-type-verkiezing .kandidaat-link:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5); }
+
+@media only screen and (min-width: 768px) {
+  .node-type-verkiezing .lijst {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+.node-type-verkiezing .kandidaat .foto {
+  background: #DDD;
+  width: 125px;
+  height: 187px;
+  float: left; }
+  .node-type-verkiezing .kandidaat .foto img {
+    display: block; }
+
+.node-type-verkiezing .kandidaat .functie {
+  font-family: HelveticaNeueLTStd-Md, sans-serif; }
+
+.node-type-verkiezing .kandidaat-modal.modal img:first-child {
+  float: left;
+  margin-right: 8px; }
+
+.node-type-verkiezing .kandidaat-wrapper {
+  background: #FFF; }
+
+.node-type-verkiezing .profiel-kort {
+  padding: 1rem;
+  float: left; }
+
+.node-type-verkiezing .profiel-kort h3 {
+  margin-bottom: .5rem; }
+
+.node-type-verkiezing .kandidaat a .meer-informatie {
+  font-family: HelveticaNeueLTStd-BdCn, sans-serif;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 2rem; }
+  .node-type-verkiezing .kandidaat a .meer-informatie:after {
+    content: 'H';
+    font-family: SPruit-icons;
+    text-decoration: none;
+    position: absolute;
+    font-weight: 800; }
+
+.node-type-verkiezing .kandidaat a:hover .meer-informatie {
+  color: #EC1B23;
+  text-decoration: none; }
+
+.node-type-verkiezing .top10 h3.naam,
+.node-type-verkiezing .lijst h3.naam {
+  font-size: 1rem;
+  color: #EC1B23; }
+
+@media only screen and (max-width: 359px) {
+  .node-type-verkiezing .kandidaat .foto {
+    display: none; } }
+@media only screen and (max-width: 400px) {
+  .node-type-verkiezing .kandidaat .foto {
+    max-width: 90px;
+    max-height: 135px; } }
+@media only screen and (min-width: 450px) {
+  .node-type-verkiezing .top10 h3.naam,
+  .node-type-verkiezing .lijst h3.naam {
+    font-size: 1.2rem; } }
+.node-type-verkiezing .icon .text {
+  display: none; }
+
+.node-type-verkiezing .icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 1px solid #EC1B23;
+  color: #EC1B23;
+  margin-top: 4px;
+  display: inline-block;
+  padding: 4px; }
+
+.node-type-verkiezing .icon:hover {
+  color: #000;
+  border: 1px solid #000; }
+
+.node-type-verkiezing .icon-telefoon:before {
+  content: "\e600"; }
+
+.node-type-verkiezing .icon-mail:after {
+  content: 'm'; }
+
+.node-type-verkiezing .icon-twitter:after {
+  content: 't'; }
+
+.node-type-verkiezing .icon-facebook:after {
+  content: 'f'; }
+
+.node-type-verkiezing .kandidaat .social {
+  clear: left; }
+
+.node-type-verkiezing .kandidaat .foto-en-social {
+  float: left; }
+
+.node-type-verkiezing #doe-mee-form input[type="submit"] {
+  float: right; }
+
+.node-type-verkiezing #to-top {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  display: block;
+  z-index: 1;
+  border-top: 1px solid #DDD; }
+
+.node-type-verkiezing #to-top a {
+  color: #EC1B23;
+  padding: .5rem;
+  text-decoration: none;
+  display: block;
+  background: #FFF;
+  font-family: HelveticaNeueLTStd-BdCn, sans-serif;
+  text-align: center;
+  min-width: 100px; }
+  .node-type-verkiezing #to-top a a:hover {
+    color: #FFF;
+    background: #000; }
+
+.node-type-verkiezing #footer-verkiezing {
+  background: #EC1B23;
+  text-align: center;
+  padding: 1rem 1rem 4rem 1rem;
+  z-index: 0; }
+  .node-type-verkiezing #footer-verkiezing .btn {
+    border: none; }
+  .node-type-verkiezing #footer-verkiezing .banner {
+    max-width: 400px;
+    width: 50%; }
+  .node-type-verkiezing #footer-verkiezing .licence-info {
+    color: #00000080;
+    font-size: .8rem; }
+    .node-type-verkiezing #footer-verkiezing .licence-info a {
+      color: #00000080;
+      text-decoration: none; }
+
+/*# sourceMappingURL=ps2019.css.map */

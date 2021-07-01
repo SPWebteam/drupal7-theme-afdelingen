@@ -1,0 +1,94 @@
+/* USER LOGIN */
+
+// Hide UI clutter when user is logging in
+.not-front.not-logged-in.page-user {
+    background: #fafafa;
+}
+.not-front.not-logged-in.page-user .logo {
+    height: 40px;
+    margin: 0 5px 0 0;
+    padding: 0 5px 0 0;
+}
+.not-front.not-logged-in.page-user .site-title a {
+    color: $color1;
+}
+.not-front.not-logged-in.page-user #container {
+    margin: 100px auto;
+    width: 100%;
+    max-width: 620px;
+    min-height: 360px; // needs a fix
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: .3em;
+    padding: 1.4em 2.1em;
+    box-shadow: 1px 1px .9em rgba(155, 155, 155, .2);
+    background: #fff;
+}
+.not-front.not-logged-in.page-user h2.title {
+    color: #555;
+    font-size: 1.6em;
+}
+.not-front.not-logged-in.page-user #primary {
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    min-height: 0;
+    overflow: hidden;
+    max-width: 420px;
+    left: 0;
+    top: 0;
+    float: none;
+}
+.not-front.not-logged-in.page-user #primary .form-item-name input, .not-front.not-logged-in.page-user #primary .form-item-pass input {
+    padding: 4px 3px;
+    font-size: 16px;
+    color: #555;
+    border-radius: 2px;
+    box-shadow: none;
+    background: #fdfdfd;
+}
+.not-front.not-logged-in.page-user .form-item-name .description, .not-front.not-logged-in.page-user .form-item-pass .description {
+    display: none;
+}
+.not-front.not-logged-in.page-user .tabs .active {
+    display: none;
+}
+.not-front.not-logged-in.page-user .tabs {
+    border: none;
+    width: auto;
+    padding: .4em;
+    margin: 0;
+}
+.not-front.not-logged-in.page-user .tabs li {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.not-front.not-logged-in.page-user .tabs li a {
+    background: none;
+    border: none;
+    width: auto;
+    color: #555;
+    font-size: .9rem;
+    display: block;
+    text-align: center;
+}
+.not-front.not-logged-in.page-user .tabs li a:hover {
+    text-decoration: underline;
+}
+.not-front.not-logged-in.page-user #edit-actions {
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+.not-front.not-logged-in.page-user label {
+    color: #888;
+    font-size: 1em;
+    font-weight: normal;
+}
+.not-front.not-logged-in.page-user #container .form-item input.error {
+    border: 2px solid #f33;
+    color: #f33;
+    box-shadow: inset 2px 2px 3px #ebb;
+}

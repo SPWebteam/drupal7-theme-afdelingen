@@ -1,0 +1,85 @@
+/* AGENDA */
+.agenda-row {
+    margin-bottom: 2rem;
+    border: 1px solid #dedede;
+}
+.agenda-afbeelding img {
+    display: block; // remove whitespace below image
+    max-width: 100%;
+    height: auto;
+}
+.agenda-meta {
+    background: #f1f1f1;
+    padding: 2rem;
+}
+.agenda-header {
+    padding: 1rem;
+    h2,h3 {
+        margin-bottom: 0;
+    }
+}
+.agenda-categorie {
+    font-family: $font-primary;
+    text-transform:uppercase;
+    display:block;
+}
+.agenda-body {
+    padding: 1rem 1rem 2rem 1rem;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    &:empty {
+        padding: 0;
+    }
+}
+span.agenda-tijdstip {
+    margin-bottom: 16px;
+}
+.date-display-range {
+    display:inline;
+}
+
+.agenda-tijdstip,
+.agenda-waar {display:block;}
+.agenda-waar a {text-decoration:none!important; border-bottom:1px solid;}
+.agenda-tijdstip:before {
+    font-family: $spruit-icons;
+    content:'B '; // time icon
+    margin-right:16px;
+}
+.agenda-waar:before {
+    font-family: $spruit-icons;
+    content:'A '; // location icon
+    margin-right:16px;
+}
+
+// SIDEBAR
+.sidebar .agenda-overzicht-block .pager {
+    display: none; // obselete??
+}
+.sidebar .agenda-overzicht-block span.date-display-single { // view needs class .time
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-family: $font-body;
+}
+
+// EDIT button is only used in agenda-view. Maybe remove in future?
+.view .views-row .bewerk { 
+    position: absolute; 
+    right: 0; 
+    background: #ddd;
+    a {
+        text-decoration:none!important;
+        padding: 0 .5rem;
+        display: block;
+        font-size: 0.75em;
+    }
+    a:hover {
+        background-color: $color1;
+        color: #fff!important;
+    }
+}

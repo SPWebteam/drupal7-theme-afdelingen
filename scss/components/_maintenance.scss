@@ -1,0 +1,14 @@
+/* MAINTENANCE MODE */
+.in-maintenance #page {
+	width: 720px;
+	margin: 0 auto;
+	padding: 30px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+.in-maintenance #content-content {
+	width: 70%;
+}
+.in-maintenance #header {
+	height: auto; //removes height: 96px;
+}

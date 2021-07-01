@@ -1,0 +1,45 @@
+/* CKEDITOR */
+html {
+  background: #f5f5f5; }
+
+body {
+  box-shadow: 1px 1px 2em #ddd;
+  min-height: 60px;
+  padding: 16px;
+  width: 620px; }
+
+.content .no-borders tr td {
+  border: 1px dashed #aaa !important; }
+
+.content table {
+  border-collapse: collapse; }
+
+.cke_source {
+  white-space: pre-wrap !important; }
+
+/*
+HelveticaInseratLTPro = 2AE1DC_0_0.woff
+HelveticaNeueLTStd-Md = 2AE1DC_1_0.woff
+HelveticaNeueLT-Light = 2AE1DC_2_0.woff
+HelveticaNeueLTStd-BdCn = 2AE1DC_3_0.woff
+HelveticaNeueLTStd-LtIt = 2AE1DC_4_0.woff
+*/
+@font-face {
+  font-family: HelveticaInseratLTPro;
+  src: url("../fonts/2AE1DC_0_0.woff"); }
+@font-face {
+  font-family: HelveticaNeueLT-Light;
+  src: url("../fonts/2AE1DC_2_0.woff"); }
+@font-face {
+  font-family: HelveticaNeueLTStd-Md;
+  src: url("../fonts/2AE1DC_1_0.woff"); }
+@font-face {
+  font-family: HelveticaNeueLTStd-BdCn;
+  src: url("../fonts/2AE1DC_3_0.woff"); }
+.content p:first-of-type {
+  font-family: HelveticaNeueLTStd-Md, sans-serif; }
+
+.content li {
+  margin-bottom: 16px; }
+
+/*# sourceMappingURL=editor.css.map */

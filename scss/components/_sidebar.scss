@@ -1,0 +1,131 @@
+/* SIDEBAR */
+
+.sidebar {overflow: hidden;}
+
+.sidebar h2.title,
+.sidebar h4.title {
+    font-size: 1.25rem;
+    font-family: $font-primary;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6 {
+    font-family: $font-middle;
+    font-size: 1rem;
+    margin:0 0 .5rem 0;
+}
+.sidebar h6 {
+    background:$color1;
+    color:#fff;
+}
+.sidebar p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.sidebar ul {
+    padding:0;
+} // removes padding for sidebars
+.sidebar li {
+    font-size: 1rem;
+}
+.sidebar li a {
+    font-size: 1rem;
+    text-decoration:none;
+}
+
+.sidebar table {margin: 0 16px;}
+.sidebar .node-title {font-weight: bold;}
+.sidebar .node-author a {color: #aaa;}
+.sidebar a:hover {text-decoration:none; color:$color1;}
+.sidebar .menu li {background: none;}
+.sidebar .menu a:hover {color: $color1; text-decoration: none;}
+
+
+/* Sidebar block content */
+.sidebar .block li  {
+	margin: 8px 0;
+	padding: 0 0 0 16px;
+	//line-height: 1.36;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.sidebar .block li:before {
+    content: "H "; // adds triangle icon
+    margin-left: -18px;
+    float: left;
+    font-family: SPruit-icons;
+    color: $color1;
+}
+.sidebar .block ol { padding: 0; margin: 16px; list-style-position: inside; }
+.sidebar .block ol li { background: none; padding: 0; margin: 0 0 8px 0; }
+.sidebar .block .title a,
+.sidebar .block .title a:visited {color: #fff;}
+.sidebar .block .node-content {padding: 8px 16px; border: none;}
+.sidebar .block .more-link {
+    border-top: 1px solid #ddd;
+    margin: 16px 0 0 0;
+}
+.sidebar .block .more-link a {
+    color: $color1;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 8px 0 16px;
+    display: block;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.sidebar .block td {padding: 8px 0;}
+.sidebar .block blockquote {margin: 0;}
+
+.sidebar fieldset.collapsed {margin: 0; padding: 0; } // ???
+
+//.sidebar .views-view-grid {text-align: center; line-height: 1.1;} // ???
+
+/* Sidebar forms */
+
+.sidebar .form-item.form-type-radio label {
+  padding: 0;
+  margin: 0;
+}
+
+/* SIDEBAR RIGHT */
+#sidebar-right .block { margin: 0 0 16px 0; padding: 0; }
+#sidebar-right .block .form-text { max-width: 281px; width: 100%; margin:10px 0; }
+#sidebar-right .view-empty p { padding: 0px 10px; }
+#sidebar-right li a {font-weight:400; font-family: $font-middle;}
+
+/* SIDEBAR LEFT */
+#sidebar-left .block {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+#sidebar-left .block-menu {
+    border-bottom: none;
+}
+#sidebar-left .block ol {
+    padding: 0; margin: 0;
+}
+#sidebar-left .block:last-of-type {
+    border: none;
+}
+#sidebar-left .dossier li,
+#sidebar-left .content li {
+    font-size:13.5px;
+    font-family: $font-middle;
+}/*quickfix*/
+
+/*= Unlikely use-cases */
+.block-block .kader-rood {border: 1px solid #f00; margin: 0; padding: 1em;}
+.block-block img {max-width: 100%; height: auto;}
+#sidebar-left .block-block .kader-rood h6,
+#sidebar-right .block-block .kader-rood h6 { margin: 0 0 .4em 0; padding: 0; left: 0; background: #fff; border-bottom: 1px solid $color1; color: $color1;}
+
+// to many selectors
+.sidebar .block-block .content a,
+.sidebar .block-block .content a:link,
+.sidebar .block-block .content a:visited {color: $color2;}
