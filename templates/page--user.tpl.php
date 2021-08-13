@@ -109,12 +109,12 @@ if (!user_is_logged_in()) { ?>
         </div>
         <div class="secondary-subscribe col-12 col-sm-6">
           <a class="btn" href="/contact?ref=afd-secondary">Contact</a>
-          <a class="btn" href="https://www.spnet.nl/aanmelden/lid?ref_source=spnl-afdelingssites&ref=afd-secondary">Word lid</a>
+          <a class="btn" href="https://wordlid.sp.nl?ref_source=spnl-afdelingssites&ref=afd-secondary">Word lid</a>
         </div>
         <?php else: ?>
         <div class="secondary-subscribe col-12 offset-sm-3 col-sm-6">
           <a class="btn" href="/contact?ref=afd-secondary">Contact</a>
-          <a class="btn" href="https://www.spnet.nl/aanmelden/lid?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a>
+          <a class="btn" href="https://wordlid.sp.nl?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a>
         </div>
         <?php endif; ?>
       </div>

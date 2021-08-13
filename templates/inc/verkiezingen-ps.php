@@ -275,7 +275,7 @@
   <img class="banner" src="/sites/all/themes/afdelingen3/nusp.png" alt="NU SP">
   <p>
     <a class="btn small" href="https://sp.nl/verkiezingen?ref=afd">Doe mee</a>
-    <a class="btn small" href="https://www.spnet.nl/aanmelden/lid" target="_blank">Word lid</a>
+    <a class="btn small" href="https://wordlid.sp.nl" target="_blank">Word lid</a>
     <?php //if ($is_front) : ?>
       <a class="btn small" href="<?php print $linkto; ?>" target="_blank">Normale website</a>
     <?php //endif; ?>

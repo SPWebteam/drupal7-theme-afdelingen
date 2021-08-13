@@ -249,7 +249,7 @@
 <!-- SECONDARY MENU -->
 <div id="secondary-menu">
   <a href="#tab-doemee">Doe mee</a>
-  <a href="https://www.spnet.nl/aanmelden/lid" target="_blank">Word lid</a>
+  <a href="https://wordlid.sp.nl" target="_blank">Word lid</a>
   <a href="/contact" target="_blank">Contact</a>
   <?php //if ($is_front) : ?>
     <a href="<?php print $linkto; ?>" target="_blank">Normale website</a>

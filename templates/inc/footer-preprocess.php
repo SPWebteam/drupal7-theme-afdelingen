@@ -24,7 +24,7 @@
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/onze-mensen/gekozen?ref=afd-footer">Onze mensen</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/afdelingen?ref=afd-footer">Afdelingen</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://doemee.sp.nl?ref=afd-footer">Doe mee</a></li>
-                <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://spnet.nl/aanmelden/lid?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a></li>
+                <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://wordlid.sp.nl?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/contact?ref=afd-footer">Contact</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/vacatures?ref=afd-footer">Vacatures</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://spnet.nl?ref=afd-footer">SPnet</a></li>
@@ -59,7 +59,7 @@
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/onze-mensen/gekozen?ref=afd-footer">Onze mensen</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/afdelingen?ref=afd-footer">Afdelingen</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://doemee.sp.nl?ref=afd-footer">Doe mee</a></li>
-                <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://spnet.nl/aanmelden/lid?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a></li>
+                <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://wordlid.sp.nl?ref_source=spnl-afdelingssites&ref=afd-footer">Word lid</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/contact?ref=afd-footer">Contact</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://sp.nl/vacatures?ref=afd-footer">Vacatures</a></li>
                 <li class="footer_menu-item"><a class="footer_menu-link" target="_blank" href="https://spnet.nl?ref=afd-footer">SPnet</a></li>
