@@ -14,7 +14,6 @@
     <?php else: ?>
       <div class="pub-date"><?php print render($afd_date); ?></div>
       <?php if ($title) { print '<h2 class="title">'.$title.'</h2>'; } ?>
-    <?php endelse; ?>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
