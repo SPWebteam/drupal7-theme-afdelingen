@@ -1,0 +1,111 @@
+// VERKIEZINGEN
+.node-type-verkiezingen #container {
+    padding-top: 0;
+    .field-collection-view {
+        padding: 0;
+        margin: 0;
+    }
+    .field-collection-view-links {
+        ul {
+
+        }
+        li {
+            margin-bottom: 0;
+        }
+    }
+    .field-collection-container {
+        margin-bottom: 0;
+        border-bottom: 1px solid blue;
+    }
+}
+// end shame
+
+// HEADER
+.verkiezingen-header {
+    border-top: 4px solid $color1;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    .verkiezingen-datum {
+        width: 100%;
+        text-align: center;
+    }
+}
+.verkiezingen-content {
+    background: #f1f1f1;
+    padding: 1rem 0;
+}
+.verkiezingen-footer {
+    padding: 1rem;
+}
+
+// LIJSTTREKKER
+.lijsttrekker {
+    .lijsttrekker-foto img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .lijsttrekker-functie {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .lijsttrekker-content {
+        background: #fff;
+        padding: 6rem 9rem;
+        max-width: $content-width;
+        float:right;
+        position: relative;
+        margin-top: -100px;
+    }
+}
+
+// KANDIDATEN
+.field-name-field-kandidaten {
+    > .field-label {
+        padding-left: 1rem;
+    }
+    > .field-items {
+        display: flex;
+        flex-direction: row;
+        //flex-wrap: nowrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        gap: 1rem;
+        .field-item {
+            background: $color1;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .kandidaat {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        padding: 5rem 1rem;
+        width: 340px;
+        touch-action: pan-y;
+    }
+    .kandidaat-foto {
+        border-radius: 50%;
+        border: 4px solid #fff;
+        background: #ccc;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .field-name-field-kandidaat-naam h3 {
+        font-size: 1rem;
+    }
+}
