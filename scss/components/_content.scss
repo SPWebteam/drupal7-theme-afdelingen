@@ -11,6 +11,10 @@
 		line-height: 1.38rem;
 	}
 }
+.content-width {
+	max-width: $content-width;
+}
+
 
 // used for doe-mee and word-lid. Obsolete
 .content .seperator {

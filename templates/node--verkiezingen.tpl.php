@@ -89,19 +89,34 @@
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
     <?php
-      // We hide the comments and links now so that we can render them later.
+      // We hide the fields so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      print render($content);
+      hide($content['sp_share']);
     ?>
+    <div>
+      <?php print render($content['field_verkiezingsslogan']); ?>
+      <?php print render($content['field_verkiezingsdatum']); ?>
+    </div>
+    <div><?php print render($content['field_lijsttrekker']); ?></div>
+    <div><?php print render($content['field_kandidaten']); ?></div>
+    <div class="speerpunten">
+      <h2 class="title content-width">Speerpunten</h2>
+      <?php print render($content['field_speerpunten']); ?>\
+    </div>
+    <div class="standpunten">
+      <h2 class="title content-width">Standpunten</h2>
+      <?php print render($content['field_standpunten']); ?>
+    </div>
+    <div class="programma">
+      <h2 class="title content-width">Verkiezingsprogramma</h2>
+      <?php print render($content['field_programma_intro']); ?>
+      <?php print render($content['field_programma_doc']); ?>
+    </div>
+    <?php print render($content); ?>
   </div>
 
   <?php
-    // Remove the "Add new comment" link on the teaser page or if the comment
-    // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) {
-      unset($content['links']['comment']['#links']['comment-add']);
-    }
     // Only display the wrapper div if there are links.
     $links = render($content['links']);
     if ($links):

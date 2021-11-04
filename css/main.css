@@ -1359,6 +1359,10 @@ span.agenda-tijdstip {
   }
 }
 
+.content-width {
+  max-width: 1140px;
+}
+
 .content .seperator {
   color: #000;
   padding: 0;
@@ -3229,6 +3233,17 @@ a.share_button--whatsapp:before {
   border-bottom: 1px solid blue;
 }
 
+.node-type-verkiezingen h2.title {
+  color: #EC1B23;
+  margin: 0 auto 1rem auto;
+}
+
+@media screen and (max-width: 1140px) {
+  .node-type-verkiezingen h2.title {
+    padding-left: 1rem;
+  }
+}
+
 .verkiezingen-header {
   border-top: 4px solid #EC1B23;
   padding: 0.5rem 1rem;
@@ -3238,6 +3253,10 @@ a.share_button--whatsapp:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.verkiezingen-header h2 {
+  margin-bottom: 0;
 }
 
 .verkiezingen-header .verkiezingen-datum {
@@ -3254,7 +3273,7 @@ a.share_button--whatsapp:before {
   padding: 1rem;
 }
 
-.lijsttrekker .lijsttrekker-foto img {
+.lijsttrekker .lijststrekker-foto img {
   display: block;
   width: 100%;
   height: auto;
@@ -3276,6 +3295,7 @@ a.share_button--whatsapp:before {
   float: right;
   position: relative;
   margin-top: -100px;
+  margin-bottom: 3rem;
 }
 
 .field-name-field-kandidaten > .field-label {
@@ -3313,7 +3333,7 @@ a.share_button--whatsapp:before {
           justify-content: center;
   justify-items: center;
   padding: 5rem 1rem;
-  width: 340px;
+  width: 320px;
   -ms-touch-action: pan-y;
       touch-action: pan-y;
 }
@@ -3336,6 +3356,57 @@ a.share_button--whatsapp:before {
 
 .field-name-field-kandidaten .field-name-field-kandidaat-naam h3 {
   font-size: 1rem;
+}
+
+.speerpunt {
+  max-width: 1140px;
+  background: #fff;
+  padding: 2rem 3rem;
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 1140px) {
+  .speerpunt {
+    padding: 4rem 6rem;
+  }
+}
+
+.standpunt {
+  max-width: 1140px;
+  background: #fff;
+  padding: 2rem 3rem;
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 1140px) {
+  .standpunt {
+    padding: 4rem 6rem;
+  }
+}
+
+.programma {
+  max-width: 1140px;
+  background: #fff;
+  padding: 2rem 3rem;
+  margin: 1rem auto;
+}
+
+.programma .field-name-field-programma-doc .file img {
+  display: none;
+}
+
+.programma .field-name-field-programma-doc .file a {
+  background: #EC1B23;
+  font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
+  padding: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #EC1B23;
+}
+
+.programma .field-name-field-programma-doc .file a:hover {
+  background: #fff;
+  color: #EC1B23;
 }
 
 /* VOLG ONS */

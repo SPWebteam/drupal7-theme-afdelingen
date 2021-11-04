@@ -73,7 +73,7 @@
   <div class="verkiezingen-menu">menu</div>
 </div>
 <div class="verkiezingen-content">
-<?php print render($page['content']); ?>
+  <?php print render($page['content']); ?>
 </div>
 <div class="verkiezingen-footer">
     Footer

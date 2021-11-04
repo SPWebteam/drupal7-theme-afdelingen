@@ -6,9 +6,6 @@
         margin: 0;
     }
     .field-collection-view-links {
-        ul {
-
-        }
         li {
             margin-bottom: 0;
         }
@@ -16,6 +13,16 @@
     .field-collection-container {
         margin-bottom: 0;
         border-bottom: 1px solid blue;
+    }
+}
+// TITLES
+.node-type-verkiezingen h2.title {
+    color: $color1;
+    margin: 0 auto 1rem auto;
+}
+@media screen and (max-width: $content-width){
+    .node-type-verkiezingen h2.title {
+        padding-left: 1rem;
     }
 }
 // end shame
@@ -26,6 +33,9 @@
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
+    h2 {
+        margin-bottom: 0;
+    }
     .verkiezingen-datum {
         width: 100%;
         text-align: center;
@@ -41,7 +51,7 @@
 
 // LIJSTTREKKER
 .lijsttrekker {
-    .lijsttrekker-foto img {
+    .lijststrekker-foto img {
         display: block;
         width: 100%;
         height: auto;
@@ -61,9 +71,10 @@
         float:right;
         position: relative;
         margin-top: -100px;
+        margin-bottom: 3rem;
     }
 }
-
+@media screen and ()
 // KANDIDATEN
 .field-name-field-kandidaten {
     > .field-label {
@@ -88,7 +99,7 @@
         justify-content: center;
         justify-items: center;
         padding: 5rem 1rem;
-        width: 340px;
+        width: 320px;
         touch-action: pan-y;
     }
     .kandidaat-foto {
@@ -108,4 +119,65 @@
     .field-name-field-kandidaat-naam h3 {
         font-size: 1rem;
     }
+}
+
+// SPEERPUNTEN
+.speerpunt {
+    max-width: $content-width;
+    background: #fff;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    // .field-name-field-speerpunt-beschrijving {
+    //     font-family: $font-middle;
+    // }
+}
+@media screen and (min-width: $content-width){
+    .speerpunt {
+        padding: 4rem 6rem;
+    }
+}
+
+// STANDPUNTEN
+.standpunt {
+    max-width: $content-width;
+    background: #fff;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    // .field-name-field-standpunt-beschrijving {
+    //     font-family: $font-middle;
+    // }
+}
+@media screen and (min-width: $content-width){
+    .standpunt {
+        padding: 4rem 6rem;
+    }
+}
+
+// PROGRAMMA
+.programma {
+    max-width: $content-width;
+    background: #fff;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    // .field-name-field-programma-intro {
+    //     font-family: $font-middle;
+    // }
+    .field-name-field-programma-doc {
+        .file img {
+            display: none;
+        }
+        .file a {
+            background: $color1;
+            font-family: $font-middle;
+            padding: 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid $color1;
+            &:hover{
+                background: #fff;
+                color: $color1;
+            }
+        }
+
+    }    
 }

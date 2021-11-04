@@ -29,10 +29,10 @@
  */
 ?>
 <div <?php print $attributes; ?>>
-  <div class="content standpunt"<?php print $content_attributes; ?>>
-    <h3><?php print render($content['field_standpunt_titel']); ?></h3>
+  <div class="content speerpunt"<?php print $content_attributes; ?>>
+    <h3><?php print render($content['field_speerpunt_titel']); ?></h3>
     <?php
-      print render($content['field_standpunt_beschrijving']);
+      print render($content['field_speerpunt_beschrijving']);
     ?>
   </div>
 </div>
