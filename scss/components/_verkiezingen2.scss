@@ -1,20 +1,25 @@
 // VERKIEZINGEN
 .node-type-verkiezingen #container {
     padding-top: 0;
+    .field-collection-container {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
     .field-collection-view {
         padding: 0;
         margin: 0;
+        border-bottom: none;
     }
     .field-collection-view-links {
         li {
             margin-bottom: 0;
         }
     }
-    .field-collection-container {
-        margin-bottom: 0;
-        border-bottom: 1px solid blue;
-    }
 }
+
+// VARIABLES
+$vk-color1: #21235fc7;
+
 // TITLES
 .node-type-verkiezingen h2.title {
     color: $color1;
@@ -28,7 +33,7 @@
 // end shame
 
 // HEADER
-.verkiezingen-header {
+.vk-header {
     border-top: 4px solid $color1;
     padding: 0.5rem 1rem;
     display: flex;
@@ -36,21 +41,63 @@
     h2 {
         margin-bottom: 0;
     }
-    .verkiezingen-datum {
+    .vk-datum {
         width: 100%;
         text-align: center;
     }
 }
-.verkiezingen-content {
+.vk-content {
     background: #f1f1f1;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
 }
-.verkiezingen-footer {
+.vk-footer {
     padding: 1rem;
 }
 
+// BANNER
+.vk-banner {
+    background: ;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative; // for box-shadow
+    margin-bottom: 4rem;
+
+    &:before, &:after {
+        font-family: "SPruit-icons";
+        font-size: 16rem;
+        color: #fff;
+        content: 'T';
+        line-height: 1;
+        display: block;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    &:before {
+        margin-top: -8rem;
+    }
+    &:after {
+        height: 8rem;
+    }
+    h1 {
+        margin-top: -4rem;
+        margin-bottom: 0;
+        font-size: 6rem;
+        color: #fff;
+        max-width: 60vw;
+        span {
+            color: $vk-color1;
+            display: block;
+        }
+    }
+}
+
+
 // LIJSTTREKKER
-.lijsttrekker {
+.vk-lijsttrekker {
     .lijststrekker-foto img {
         display: block;
         width: 100%;
@@ -66,15 +113,22 @@
     }
     .lijsttrekker-content {
         background: #fff;
-        padding: 6rem 9rem;
+        padding: 2rem 1rem;
         max-width: $content-width;
         float:right;
         position: relative;
-        margin-top: -100px;
         margin-bottom: 3rem;
+        box-shadow: 0 8px 8px #c8c5c554;
     }
 }
-@media screen and ()
+@media screen and (min-width:$content-width){
+    .vk-lijsttrekker{
+        .lijsttrekker-content {
+            margin-top: -200px;
+            padding: 6rem 9rem;
+        }
+    }
+}
 // KANDIDATEN
 .field-name-field-kandidaten {
     > .field-label {
@@ -122,39 +176,33 @@
 }
 
 // SPEERPUNTEN
-.speerpunt {
+.vk-speerpunt {
     max-width: $content-width;
     background: #fff;
     padding: 2rem 3rem;
     margin: 1rem auto;
-    // .field-name-field-speerpunt-beschrijving {
-    //     font-family: $font-middle;
-    // }
 }
 @media screen and (min-width: $content-width){
-    .speerpunt {
+    .vk-speerpunt {
         padding: 4rem 6rem;
     }
 }
 
 // STANDPUNTEN
-.standpunt {
+.vk-standpunt {
     max-width: $content-width;
     background: #fff;
     padding: 2rem 3rem;
     margin: 1rem auto;
-    // .field-name-field-standpunt-beschrijving {
-    //     font-family: $font-middle;
-    // }
 }
 @media screen and (min-width: $content-width){
-    .standpunt {
+    .vk-standpunt {
         padding: 4rem 6rem;
     }
 }
 
 // PROGRAMMA
-.programma {
+.vk-programma {
     max-width: $content-width;
     background: #fff;
     padding: 2rem 3rem;

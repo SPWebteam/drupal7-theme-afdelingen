@@ -91,24 +91,37 @@
     <?php
       // We hide the fields so that we can render them later.
       hide($content['comments']);
-      hide($content['links']);
+      //hide($content['links']);
       hide($content['sp_share']);
     ?>
-    <div>
-      <?php print render($content['field_verkiezingsslogan']); ?>
-      <?php print render($content['field_verkiezingsdatum']); ?>
+
+    <!-- LIJSTTREKKER -->
+    <div class="vk-lijsttrekker">
+      <?php print render($content['field_lijsttrekker']); ?>
     </div>
-    <div><?php print render($content['field_lijsttrekker']); ?></div>
-    <div><?php print render($content['field_kandidaten']); ?></div>
-    <div class="speerpunten">
+    <!-- KANDIDATEN -->
+    <div class="vk-kandidaten">
+      <?php print render($content['field_kandidaten']); ?>
+    </div>
+    <!-- BANNER -->
+    <div class="vk-banner">
+      <h1>
+        <span class='stem-sp'>Stem SP</span>
+        <?php print render($content['field_verkiezingsslogan']); ?>
+      </h1>
+    </div>
+    <!-- SPEERPUNTEN -->
+    <div class="vk-speerpunten">
       <h2 class="title content-width">Speerpunten</h2>
       <?php print render($content['field_speerpunten']); ?>\
     </div>
-    <div class="standpunten">
+    <!-- STANDPUNTEN -->
+    <div class="vk-standpunten">
       <h2 class="title content-width">Standpunten</h2>
       <?php print render($content['field_standpunten']); ?>
     </div>
-    <div class="programma">
+    <!-- PROGRAMMA -->
+    <div class="vk-programma">
       <h2 class="title content-width">Verkiezingsprogramma</h2>
       <?php print render($content['field_programma_intro']); ?>
       <?php print render($content['field_programma_doc']); ?>

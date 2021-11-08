@@ -3219,18 +3219,19 @@ a.share_button--whatsapp:before {
   padding-top: 0;
 }
 
+.node-type-verkiezingen #container .field-collection-container {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
 .node-type-verkiezingen #container .field-collection-view {
   padding: 0;
   margin: 0;
+  border-bottom: none;
 }
 
 .node-type-verkiezingen #container .field-collection-view-links li {
   margin-bottom: 0;
-}
-
-.node-type-verkiezingen #container .field-collection-container {
-  margin-bottom: 0;
-  border-bottom: 1px solid blue;
 }
 
 .node-type-verkiezingen h2.title {
@@ -3244,7 +3245,7 @@ a.share_button--whatsapp:before {
   }
 }
 
-.verkiezingen-header {
+.vk-header {
   border-top: 4px solid #EC1B23;
   padding: 0.5rem 1rem;
   display: -webkit-box;
@@ -3255,31 +3256,81 @@ a.share_button--whatsapp:before {
           align-items: center;
 }
 
-.verkiezingen-header h2 {
+.vk-header h2 {
   margin-bottom: 0;
 }
 
-.verkiezingen-header .verkiezingen-datum {
+.vk-header .vk-datum {
   width: 100%;
   text-align: center;
 }
 
-.verkiezingen-content {
+.vk-content {
   background: #f1f1f1;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
-.verkiezingen-footer {
+.vk-footer {
   padding: 1rem;
 }
 
-.lijsttrekker .lijststrekker-foto img {
+.vk-banner {
+  background: #ED1C24;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 0 8px 8px #00000017;
+          box-shadow: 0 8px 8px #00000017;
+  margin-bottom: 4rem;
+}
+
+.vk-banner:before, .vk-banner:after {
+  font-family: "SPruit-icons";
+  font-size: 16rem;
+  color: #fff;
+  content: 'T';
+  line-height: 1;
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.vk-banner:before {
+  margin-top: -8rem;
+}
+
+.vk-banner:after {
+  height: 8rem;
+}
+
+.vk-banner h1 {
+  margin-top: -4rem;
+  margin-bottom: 0;
+  font-size: 6rem;
+  color: #fff;
+  max-width: 60vw;
+}
+
+.vk-banner h1 span {
+  color: #21235fc7;
+  display: block;
+}
+
+.vk-lijsttrekker .lijststrekker-foto img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.lijsttrekker .lijsttrekker-functie {
+.vk-lijsttrekker .lijsttrekker-functie {
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3288,14 +3339,22 @@ a.share_button--whatsapp:before {
   margin-bottom: 1rem;
 }
 
-.lijsttrekker .lijsttrekker-content {
+.vk-lijsttrekker .lijsttrekker-content {
   background: #fff;
-  padding: 6rem 9rem;
+  padding: 2rem 1rem;
   max-width: 1140px;
   float: right;
   position: relative;
-  margin-top: -100px;
   margin-bottom: 3rem;
+  -webkit-box-shadow: 0 8px 8px #c8c5c554;
+          box-shadow: 0 8px 8px #c8c5c554;
+}
+
+@media screen and (min-width: 1140px) {
+  .vk-lijsttrekker .lijsttrekker-content {
+    margin-top: -200px;
+    padding: 6rem 9rem;
+  }
 }
 
 .field-name-field-kandidaten > .field-label {
@@ -3358,7 +3417,7 @@ a.share_button--whatsapp:before {
   font-size: 1rem;
 }
 
-.speerpunt {
+.vk-speerpunten {
   max-width: 1140px;
   background: #fff;
   padding: 2rem 3rem;
@@ -3366,12 +3425,12 @@ a.share_button--whatsapp:before {
 }
 
 @media screen and (min-width: 1140px) {
-  .speerpunt {
+  .vk-speerpunten {
     padding: 4rem 6rem;
   }
 }
 
-.standpunt {
+.vk-standpunten {
   max-width: 1140px;
   background: #fff;
   padding: 2rem 3rem;
@@ -3379,23 +3438,23 @@ a.share_button--whatsapp:before {
 }
 
 @media screen and (min-width: 1140px) {
-  .standpunt {
+  .vk-standpunten {
     padding: 4rem 6rem;
   }
 }
 
-.programma {
+.vk-programma {
   max-width: 1140px;
   background: #fff;
   padding: 2rem 3rem;
   margin: 1rem auto;
 }
 
-.programma .field-name-field-programma-doc .file img {
+.vk-programma .field-name-field-programma-doc .file img {
   display: none;
 }
 
-.programma .field-name-field-programma-doc .file a {
+.vk-programma .field-name-field-programma-doc .file a {
   background: #EC1B23;
   font-family: "HelveticaNeueLTStd-BdCn", sans-serif;
   padding: 0.5rem;
@@ -3404,7 +3463,7 @@ a.share_button--whatsapp:before {
   border: 1px solid #EC1B23;
 }
 
-.programma .field-name-field-programma-doc .file a:hover {
+.vk-programma .field-name-field-programma-doc .file a:hover {
   background: #fff;
   color: #EC1B23;
 }

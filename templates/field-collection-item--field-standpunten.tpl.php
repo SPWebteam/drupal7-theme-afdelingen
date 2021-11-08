@@ -29,7 +29,7 @@
  */
 ?>
 <div <?php print $attributes; ?>>
-  <div class="content standpunt"<?php print $content_attributes; ?>>
+  <div class="content vk-standpunt"<?php print $content_attributes; ?>>
     <h3><?php print render($content['field_standpunt_titel']); ?></h3>
     <?php
       print render($content['field_standpunt_beschrijving']);

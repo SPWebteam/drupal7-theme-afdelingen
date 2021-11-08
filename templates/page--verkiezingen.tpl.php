@@ -67,14 +67,14 @@
  * @see html.tpl.php
  */
 ?>
-<div class="verkiezingen-header">
+<div class="vk-header">
   <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-  <h2 class="verkiezingen-datum">Stem 24 november SP</h2>
-  <div class="verkiezingen-menu">menu</div>
+  <h2 class="vk-datum">Stem 24 november SP</h2>
+  <div class="vk-menu">menu</div>
 </div>
-<div class="verkiezingen-content">
+<div class="vk-content">
   <?php print render($page['content']); ?>
 </div>
-<div class="verkiezingen-footer">
+<div class="vk-footer">
     Footer
 </div>

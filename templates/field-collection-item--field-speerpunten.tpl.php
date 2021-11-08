@@ -29,7 +29,7 @@
  */
 ?>
 <div <?php print $attributes; ?>>
-  <div class="content speerpunt"<?php print $content_attributes; ?>>
+  <div class="content vk-speerpunt"<?php print $content_attributes; ?>>
     <h3><?php print render($content['field_speerpunt_titel']); ?></h3>
     <?php
       print render($content['field_speerpunt_beschrijving']);
