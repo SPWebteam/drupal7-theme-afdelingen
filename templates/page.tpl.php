@@ -119,7 +119,6 @@ include('inc/secondary-preprocess.php');
 <div class="footer">
   <?php if(isset($footer)) { print $footer; } ?>
   <div class="footer-bottom">
-    <span><a target="_blank" href="https://www.sp.nl/privacy">Privacy</a> | </span>
     <?php if ($type !== 'international'): ?>
       <?php print render($page['license-info']); ?>
     <?php else : ?>
