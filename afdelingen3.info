@@ -10,6 +10,7 @@ stylesheets[all][] = css/main.css
 ; JavaScript
 scripts[] = js/vendor/modernizr-2.8.3.min.js
 scripts[] = 'js/afdelingen3.js'
+scripts[] = 'js/cookiebar.js'
 scripts[] = 'js/myfonts.js'
 ;scripts[] = 'js/readspeaker_exp_nl.js'
 ;scripts[] = 'js/countdown.js'

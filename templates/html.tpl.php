@@ -14,10 +14,31 @@
   <meta name="author" content="Socialistische Partij" />
   <meta name="google-site-verification" content="_Ci3443QcEuyTVHxUUCR2XKKbYqLsTs09A44ztEJF1M" />
   <meta name="viewport" content="width=device-width" />
-  
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+  <?php
+  /**
+   * Only load tracking html elements, such as facebook 'pixel', when user consent is given.
+   * When caching is enabled for the site, use the cookie_aware_page_cache module to cache variants
+   * Depending on the value of the sprivacy (tracking consent) cookie
+   */
+  if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 2) :?>
+  <!-- Only load tracking when consent is given -->
+  <!-- INSERT FACEBOOK SNIPPET HERE -->
+  <!-- End Facebook Pixel Code -->
+  <?php endif; /* End tracking consent */ ?>
+  <?php if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 1 || $_COOKIE['sprivacy'] == 2) :?>
+  <!-- Only load tracking when consent is given: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20896723-11"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-20896723-11');
+  </script>
+  <!-- End Google Analytics Code -->
+  <?php endif; /* End tracking consent */ ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -31,6 +52,7 @@
     <?php print $page; ?>
     <?php print $page_bottom; ?>
   </div>
+  <div id="cookiebar" class="cookiebar"></div>
   <?php print $scripts; ?>
 </body>
 </html>

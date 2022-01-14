@@ -39,6 +39,11 @@
               </ul>
             </div>
           </div>
+          <div class="row">
+            <div class="col-12">
+              <div style="text-align:center;"><a id="cookiebar-show" href="javascript:;">Privacy instellingen</a></div>
+            </div>
+          </div>
         </div>
       ';
       break;
@@ -74,6 +79,11 @@
               </ul>
             </div>
           </div>
+          <div class="row">
+            <div class="col-12">
+              <div style="text-align:center;"><a id="cookiebar-show" href="javascript:;">Privacy instellingen</a></div>
+            </div>
+          </div>
         </div>
       ';
       break;
@@ -92,6 +102,11 @@
             <li class="footer_menu-item footer_menu-item--international"><a class="footer_menu-link" href="/history?ref=afd-footer">History</a></li>
             <li class="footer_menu-item footer_menu-item--international"><a class="footer_menu-link" href="/contact?ref=afd-footer" class="last">Contact</a></li>
           </ul>
+          <div class="row">
+            <div class="col-12">
+              <div style="text-align:center;"><a id="cookiebar-show" href="javascript:;">Privacy settings</a></div>
+            </div>
+          </div>
         </div>
       ';
       break;
