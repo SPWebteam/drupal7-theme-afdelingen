@@ -1279,9 +1279,9 @@ span.agenda-tijdstip {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cookiebar .cookiebar-info {
@@ -1301,17 +1301,16 @@ span.agenda-tijdstip {
 .cookiebar button {
   border: none;
   padding: 0.5rem 1rem;
-  color: #444;
-  background: none;
+  color: #000;
+  background: #fff;
 }
 
 .cookiebar button:hover {
-  color: #fff;
+  background: #00e600;
 }
 
 .cookiebar button.accept {
   background: #00b300;
-  color: #fff;
 }
 
 .cookiebar button.accept:hover {
