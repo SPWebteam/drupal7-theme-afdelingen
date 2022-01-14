@@ -1266,7 +1266,7 @@ span.agenda-tijdstip {
 }
 
 .cookiebar {
-  text-align: right;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1303,6 +1303,8 @@ span.agenda-tijdstip {
   padding: 0.5rem 1rem;
   color: #000;
   background: #fff;
+  font-family: "HelveticaInseratLTPro", sans-serif;
+  text-transform: uppercase;
 }
 
 .cookiebar button:hover {

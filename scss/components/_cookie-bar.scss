@@ -1,6 +1,6 @@
 // COOKIEBAR
 .cookiebar {
-  text-align: right;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -25,6 +25,8 @@
     padding: 0.5rem 1rem;
     color: #000;
     background: #fff;
+    font-family: $font-primary;
+    text-transform: uppercase;
     &:hover {
       background: lighten(green, 20%);
     }
