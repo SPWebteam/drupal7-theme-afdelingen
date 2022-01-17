@@ -24,21 +24,15 @@
    * Depending on the value of the sprivacy (tracking consent) cookie
    */
   if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 2) :?>
-  <!-- Only load tracking when consent is given -->
-  <!-- INSERT FACEBOOK SNIPPET HERE -->
-  <!-- End Facebook Pixel Code -->
-  <?php endif; /* End tracking consent */ ?>
+  <!-- Only load advertising/tracking when consent is given -->
+  <!-- INSERT CODE SNIPPET HERE -->
+  <!-- End advertising/tracking -->
+  <?php endif; ?>
   <?php if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 1 || $_COOKIE['sprivacy'] == 2) :?>
-  <!-- Only load tracking when consent is given: Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20896723-11"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-20896723-11');
-  </script>
-  <!-- End Google Analytics Code -->
-  <?php endif; /* End tracking consent */ ?>
+  <!-- Only load anonymized statistical tracking -->
+  <!-- INSERT CODE SNIPPET HERE -->
+  <!-- End anonymized statistical tracking -->
+  <?php endif; ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

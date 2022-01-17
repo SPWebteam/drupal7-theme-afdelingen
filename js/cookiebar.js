@@ -8,7 +8,7 @@
             <div id="cookiebar-info" class="cookiebar-info">
                 <p>De SP gebruikt cookies om het bezoek aan onze sites te meten. Deze gebruiken geen persoonsgegevens. Alleen als je toestemming geeft gebruiken we daarnaast cookies en scripts om advertenties af te stemmen op jouw interesses. Dan verwerken we wel persoonlijke gegevens over je bezoek. Meer informatie vind je op onze <a href="https://sp.nl/privacy">privacy pagina</a>.</p>
                 <div>
-                    <button id="cookiebar-analytics" type="button">Alleen functioneel</button>
+                    <button id="cookiebar-functional" type="button">Alleen functioneel</button>
                     <button id="cookiebar-refuse" type="button">Niet akkoord</button>                  
                     <button class="accept" id="cookiebar-agree" type="button">Akkoord</button>
                 </div>
@@ -35,7 +35,7 @@
 
             // ADD EVENTLISTENERS TO PRIVACY BUTTONS
             const elCookieAgree = document.getElementById("cookiebar-agree").addEventListener("click", cookieAgree, true);
-            const elCookieAnalytics = document.getElementById("cookiebar-analytics").addEventListener("click", cookieAnalytics, true);
+            const elCookieFunctional = document.getElementById("cookiebar-functional").addEventListener("click", cookieFunctional, true);
             const elCookieRefuse = document.getElementById("cookiebar-refuse").addEventListener("click", cookieRefuse, true);
             
             // GET COOKIE INFO
@@ -82,19 +82,18 @@
                 toggleCookieBar();
                 location.reload()
             }
-            function cookieAnalytics(){
+            function cookieRefuse(){
                 document.cookie = "sprivacy=1; path=/;" + expires;
                 console.log(document.cookie);
                 toggleCookieBar();
                 location.reload()
             }
-            function cookieRefuse(){
+            function cookieFunctional(){
                 document.cookie = "sprivacy=0; path=/;" + expires;
                 console.log(document.cookie);
                 toggleCookieBar();
                 location.reload()
             }
-
         }
     };
 
