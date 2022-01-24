@@ -30,7 +30,14 @@
   <?php endif; ?>
   <?php if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 1 || $_COOKIE['sprivacy'] == 2) :?>
   <!-- Only load anonymized statistical tracking -->
-  <!-- INSERT CODE SNIPPET HERE -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20896723-11"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-20896723-11',{ 'anonymize_ip': true });
+  </script>
   <!-- End anonymized statistical tracking -->
   <?php endif; ?>
 </head>
