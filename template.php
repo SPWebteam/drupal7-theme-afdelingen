@@ -200,32 +200,6 @@ function inline_date($string,$date) {
   return substr_replace($string,'<span class="inline-date">'.$date.'</span><span class="inline-date-seperator">&bull;</span>', $pos, 0);
 }
 
-function afdelingen3_print_pdf_tcpdf_footer2($vars) {
-  $pdf = $vars['pdf'];
-  $pdf->SetPrintHeader(false);
-  return $pdf;
-}
-
-function afdelingen3_print_pdf_tcpdf_header($vars) {
-  $pdf = $vars['pdf'];
-  $pdf->SetPrintHeader(false);
-
-  return $pdf;
-}
-
-function afdelingen3_print_pdf_tcpdf_page($vars) {
-  $pdf = $vars['pdf'];
-  // set margins
-  $pdf->SetMargins(10, 10, 10);
-  // set auto page breaks
-  $pdf->SetAutoPageBreak(TRUE, 15);
-  // set image scale factor
-  $pdf->setImageScale(1);
-  // set image compression quality
-  $pdf->setJPEGQuality(100);
-  return $pdf;
-}
-
 /**
  * Output customized node preview on node edit and add forms.
  */
