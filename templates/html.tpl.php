@@ -12,7 +12,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="author" content="Socialistische Partij" />
-  <meta name="google-site-verification" content="_Ci3443QcEuyTVHxUUCR2XKKbYqLsTs09A44ztEJF1M" />
   <meta name="viewport" content="width=device-width" />
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
@@ -55,5 +54,12 @@
   </div>
   <div id="cookiebar" class="cookiebar"></div>
   <?php print $scripts; ?>
+
+  <?php if(isset($_COOKIE['sprivacy']) && $_COOKIE['sprivacy'] == 2) :?>
+  <!-- Only load advertising/tracking when consent is given -->
+  <script language='JavaScript1.1' async src='//pixel.mathtag.com/event/js?mt_id=1578748&mt_adid=249697&mt_exem=&mt_excl=&v1=&v2=&v3=&s1=&s2=&s3='></script>
+  <!-- End advertising/tracking -->
+  <?php endif; ?>
+
 </body>
 </html>
